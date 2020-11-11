@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2020-11-11T18:40:02.552Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.193 Safari/537.36" etag="tymfIU-xc4Hm3n5PwItu" version="13.9.6" type="github">
+<mxfile host="app.diagrams.net" modified="2020-11-11T18:55:01.869Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.193 Safari/537.36" etag="Ac3rT8NyLphrTBcqzfR4" version="13.9.6" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
-    <mxGraphModel dx="2426" dy="1321" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="1">
+    <mxGraphModel dx="2062" dy="1123" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="1">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
@@ -739,6 +739,9 @@
         <mxCell id="FCah8ORx9_7Y5or5nvMT-260" value="Haha, you&#39;ve got nothing on me, you&#39;re going to your execution as planned" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;strokeColor=#000000;strokeWidth=1;fillColor=#ffffff;" vertex="1" parent="FCah8ORx9_7Y5or5nvMT-194">
           <mxGeometry x="295" y="810" width="180" height="70" as="geometry" />
         </mxCell>
+        <mxCell id="FCah8ORx9_7Y5or5nvMT-366" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;shadow=0;endArrow=classic;endFill=1;" edge="1" parent="FCah8ORx9_7Y5or5nvMT-194" source="FCah8ORx9_7Y5or5nvMT-267" target="FCah8ORx9_7Y5or5nvMT-307">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="FCah8ORx9_7Y5or5nvMT-267" value="Haha, you&#39;ve got nothing on me, you can say whatever you want, it&#39;s not true, you&#39;re going to your execution as planned" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;strokeColor=#000000;strokeWidth=1;fillColor=#ffffff;" vertex="1" parent="FCah8ORx9_7Y5or5nvMT-194">
           <mxGeometry x="530" y="810" width="180" height="70" as="geometry" />
         </mxCell>
@@ -782,7 +785,10 @@
         <mxCell id="FCah8ORx9_7Y5or5nvMT-280" value="If won&#39;t come with me with me in the next 5 second, I&#39;ll have to use my taser gun on you, and trust me, you really don&#39;t want this..." style="rounded=1;whiteSpace=wrap;html=1;shadow=0;strokeColor=#000000;strokeWidth=1;fillColor=#ffffff;" vertex="1" parent="FCah8ORx9_7Y5or5nvMT-194">
           <mxGeometry x="1060" y="253" width="290" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="FCah8ORx9_7Y5or5nvMT-283" value="Turn against the wall and put your hands on it. If you do anything suspicions, I won&#39;t hasitate tou use my taser gun" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;strokeColor=#000000;strokeWidth=1;fillColor=#ffffff;" vertex="1" parent="FCah8ORx9_7Y5or5nvMT-194">
+        <mxCell id="FCah8ORx9_7Y5or5nvMT-365" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;shadow=0;endArrow=classic;endFill=1;" edge="1" parent="FCah8ORx9_7Y5or5nvMT-194" source="FCah8ORx9_7Y5or5nvMT-283" target="FCah8ORx9_7Y5or5nvMT-307">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FCah8ORx9_7Y5or5nvMT-283" value="Now, turn against the wall and put your hands on it. If you do anything suspicions, I won&#39;t hasitate tou use my taser gun" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;strokeColor=#000000;strokeWidth=1;fillColor=#ffffff;" vertex="1" parent="FCah8ORx9_7Y5or5nvMT-194">
           <mxGeometry x="915" y="810" width="350" height="70" as="geometry" />
         </mxCell>
         <mxCell id="FCah8ORx9_7Y5or5nvMT-286" value="OK, fine......&amp;nbsp;&lt;br&gt;(No other options)" style="rounded=0;whiteSpace=wrap;html=1;shadow=0;strokeColor=#000000;strokeWidth=1;fillColor=#ffffff;" vertex="1" parent="FCah8ORx9_7Y5or5nvMT-194">
@@ -819,6 +825,9 @@
         <mxCell id="FCah8ORx9_7Y5or5nvMT-301" value="Oh, you&#39;re familiar with the law, I didn&#39;t know about that, I&#39;ll take you to your lawyer" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;strokeColor=#000000;strokeWidth=1;fillColor=#ffffff;direction=east;" vertex="1" parent="FCah8ORx9_7Y5or5nvMT-194">
           <mxGeometry x="1750" y="450" width="160" height="60" as="geometry" />
         </mxCell>
+        <mxCell id="FCah8ORx9_7Y5or5nvMT-307" value="Guard taking you to the courthouse" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;strokeColor=#000000;strokeWidth=1;fillColor=#ffffff;" vertex="1" parent="FCah8ORx9_7Y5or5nvMT-194">
+          <mxGeometry x="742" y="930" width="120" height="60" as="geometry" />
+        </mxCell>
         <mxCell id="FCah8ORx9_7Y5or5nvMT-195" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;shadow=0;endArrow=none;endFill=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="FCah8ORx9_7Y5or5nvMT-166" target="FCah8ORx9_7Y5or5nvMT-194">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
@@ -854,20 +863,59 @@
             <mxPoint x="4450" y="2570" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="FCah8ORx9_7Y5or5nvMT-303" value="Security room" style="swimlane;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="2960" y="2670" width="305" height="130" as="geometry">
+        <mxCell id="FCah8ORx9_7Y5or5nvMT-363" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;shadow=0;endArrow=classic;endFill=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="FCah8ORx9_7Y5or5nvMT-303" target="FCah8ORx9_7Y5or5nvMT-308">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FCah8ORx9_7Y5or5nvMT-303" value="Security room" style="swimlane;strokeWidth=3;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="2680" y="2300" width="555" height="500" as="geometry">
             <mxRectangle x="250" y="450" width="110" height="23" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="FCah8ORx9_7Y5or5nvMT-304" value="Computer" style="shape=ext;double=1;rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="FCah8ORx9_7Y5or5nvMT-303">
-          <mxGeometry x="92.5" y="30" width="120" height="30" as="geometry" />
+        <mxCell id="FCah8ORx9_7Y5or5nvMT-367" value="You&#39;re entering the security room and you see a computer with the following message on it:&lt;br&gt;Search criminal name: ________" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;strokeColor=#000000;strokeWidth=3;fillColor=#ffffff;" vertex="1" parent="FCah8ORx9_7Y5or5nvMT-303">
+          <mxGeometry x="30" y="38" width="490" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="FCah8ORx9_7Y5or5nvMT-305" value="Search criminal name&lt;br&gt;(Free text- 3 tries)" style="shape=ext;double=1;rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="FCah8ORx9_7Y5or5nvMT-303">
-          <mxGeometry x="12.5" y="70" width="280" height="50" as="geometry" />
+        <mxCell id="FCah8ORx9_7Y5or5nvMT-368" value="____________&lt;br&gt;(Free text- 3 tries)" style="rounded=0;whiteSpace=wrap;html=1;shadow=0;strokeColor=#000000;strokeWidth=3;fillColor=#ffffff;" vertex="1" parent="FCah8ORx9_7Y5or5nvMT-303">
+          <mxGeometry x="218" y="130" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="FCah8ORx9_7Y5or5nvMT-306" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;shadow=0;endArrow=classic;endFill=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="FCah8ORx9_7Y5or5nvMT-234" target="FCah8ORx9_7Y5or5nvMT-303">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="3169.999999999999" y="2604.8823529411766" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="3300" y="2605" />
+              <mxPoint x="3300" y="2280" />
+              <mxPoint x="2968" y="2280" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FCah8ORx9_7Y5or5nvMT-308" value="Courthouse" style="swimlane;shadow=0;strokeColor=#000000;strokeWidth=3;fillColor=#ffffff;startSize=23;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="3360" y="2860" width="1950" height="1040" as="geometry">
+            <mxRectangle x="3360" y="1760" width="70" height="23" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FCah8ORx9_7Y5or5nvMT-362" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;shadow=0;endArrow=classic;endFill=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="FCah8ORx9_7Y5or5nvMT-359" target="FCah8ORx9_7Y5or5nvMT-308">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FCah8ORx9_7Y5or5nvMT-359" value="Lawyer" style="swimlane;strokeWidth=3;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="5440" y="2300" width="555" height="500" as="geometry">
+            <mxRectangle x="250" y="450" width="110" height="23" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FCah8ORx9_7Y5or5nvMT-360" value="Search criminal name&lt;br&gt;(Free text- 3 tries)" style="shape=ext;double=1;rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="FCah8ORx9_7Y5or5nvMT-359">
+          <mxGeometry x="137.5" y="210" width="280" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="FCah8ORx9_7Y5or5nvMT-361" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;shadow=0;endArrow=classic;endFill=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="FCah8ORx9_7Y5or5nvMT-301" target="FCah8ORx9_7Y5or5nvMT-359">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="5718" y="2240" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FCah8ORx9_7Y5or5nvMT-364" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;shadow=0;endArrow=classic;endFill=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="FCah8ORx9_7Y5or5nvMT-307" target="FCah8ORx9_7Y5or5nvMT-308">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="4162" y="2830" />
+              <mxPoint x="4335" y="2830" />
+            </Array>
           </mxGeometry>
         </mxCell>
       </root>
