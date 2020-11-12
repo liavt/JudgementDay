@@ -1,0 +1,26 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/script.rpy", line 138, in script
+    $ guilty = true
+  File "game/script.rpy", line 138, in <module>
+    $ guilty = true
+NameError: name 'true' is not defined
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/script.rpy", line 138, in script
+    $ guilty = true
+  File "D:\Programs\Renpy SDK\renpy-7.3.5-sdk\renpy\ast.py", line 914, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "D:\Programs\Renpy SDK\renpy-7.3.5-sdk\renpy\python.py", line 2028, in py_exec_bytecode
+    exec bytecode in globals, locals
+  File "game/script.rpy", line 138, in <module>
+    $ guilty = true
+NameError: name 'true' is not defined
+
+Windows-8-6.2.9200
+Ren'Py 7.3.5.606
+TextGame 1.0
+Thu Nov 12 15:12:54 2020
