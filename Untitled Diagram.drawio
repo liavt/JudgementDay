@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2020-11-12T11:23:09.965Z" agent="5.0 (Windows)" etag="OoXoHejgMVa2Eprqa70q" version="13.9.7" type="github">
+<mxfile host="app.diagrams.net" modified="2020-11-12T12:13:08.529Z" agent="5.0 (Windows)" etag="F1Qqds-faAW_87fg24XO" version="13.9.7" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
-    <mxGraphModel dx="1385" dy="659" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="1">
+    <mxGraphModel dx="16620" dy="7910" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="1">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
@@ -888,7 +888,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="FCah8ORx9_7Y5or5nvMT-308" value="Courthouse" style="swimlane;shadow=0;strokeColor=#000000;strokeWidth=3;fillColor=#ffffff;startSize=20;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-          <mxGeometry x="3360" y="2860" width="2170" height="3340" as="geometry">
+          <mxGeometry x="3360" y="2860" width="2760" height="4690" as="geometry">
             <mxRectangle x="3360" y="1760" width="70" height="23" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
@@ -936,36 +936,6 @@
         </mxCell>
         <mxCell id="OWotIDpkWMKffGTOsaOe-0" value="&lt;div&gt;Prosecutor: Hello, I will ask you some&lt;/div&gt;&lt;div&gt;questions and you must answer honestly with nothing but the truth.&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;strokeColor=#000000;strokeWidth=1;fillColor=#ffffff;" vertex="1" parent="FCah8ORx9_7Y5or5nvMT-308">
           <mxGeometry x="870" y="560" width="210" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="OWotIDpkWMKffGTOsaOe-1" value="Judge is starting to ask questions" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="FCah8ORx9_7Y5or5nvMT-308">
-          <mxGeometry x="50" y="330" width="600" height="260" as="geometry" />
-        </mxCell>
-        <mxCell id="OWotIDpkWMKffGTOsaOe-2" value="What&#39;s your alibi (Answer and after that the judge says the bartender saw you)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="OWotIDpkWMKffGTOsaOe-1">
-          <mxGeometry y="26" width="600" height="26" as="geometry" />
-        </mxCell>
-        <mxCell id="OWotIDpkWMKffGTOsaOe-3" value="Why you did it" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="OWotIDpkWMKffGTOsaOe-1">
-          <mxGeometry y="52" width="600" height="26" as="geometry" />
-        </mxCell>
-        <mxCell id="OWotIDpkWMKffGTOsaOe-4" value="What did you do 1 hour (or any amount of time) before you did the crime" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="OWotIDpkWMKffGTOsaOe-1">
-          <mxGeometry y="78" width="600" height="26" as="geometry" />
-        </mxCell>
-        <mxCell id="OWotIDpkWMKffGTOsaOe-5" value="Why this specific restaurnt" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="OWotIDpkWMKffGTOsaOe-1">
-          <mxGeometry y="104" width="600" height="26" as="geometry" />
-        </mxCell>
-        <mxCell id="OWotIDpkWMKffGTOsaOe-6" value="How do you explain the DNA match" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="OWotIDpkWMKffGTOsaOe-1">
-          <mxGeometry y="130" width="600" height="26" as="geometry" />
-        </mxCell>
-        <mxCell id="OWotIDpkWMKffGTOsaOe-7" value="Can you prove that you have twin brother (Answer: You can find finger prints on X in the crime scene)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="OWotIDpkWMKffGTOsaOe-1">
-          <mxGeometry y="156" width="600" height="26" as="geometry" />
-        </mxCell>
-        <mxCell id="OWotIDpkWMKffGTOsaOe-8" value="How do you explain the DNA match" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="OWotIDpkWMKffGTOsaOe-1">
-          <mxGeometry y="182" width="600" height="26" as="geometry" />
-        </mxCell>
-        <mxCell id="OWotIDpkWMKffGTOsaOe-9" value="How do you explain the DNA match" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="OWotIDpkWMKffGTOsaOe-1">
-          <mxGeometry y="208" width="600" height="26" as="geometry" />
-        </mxCell>
-        <mxCell id="OWotIDpkWMKffGTOsaOe-10" value="How do you explain the DNA match" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="OWotIDpkWMKffGTOsaOe-1">
-          <mxGeometry y="234" width="600" height="26" as="geometry" />
         </mxCell>
         <mxCell id="OWotIDpkWMKffGTOsaOe-47" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="FCah8ORx9_7Y5or5nvMT-308" source="OWotIDpkWMKffGTOsaOe-11" target="OWotIDpkWMKffGTOsaOe-15">
           <mxGeometry relative="1" as="geometry" />
@@ -1465,6 +1435,9 @@
         <mxCell id="OWotIDpkWMKffGTOsaOe-117" value="The test must be wrong then." style="rounded=0;whiteSpace=wrap;html=1;shadow=0;strokeColor=#000000;strokeWidth=1;fillColor=#ffffff;" vertex="1" parent="FCah8ORx9_7Y5or5nvMT-308">
           <mxGeometry x="1290" y="2371" width="120" height="60" as="geometry" />
         </mxCell>
+        <mxCell id="OWotIDpkWMKffGTOsaOe-338" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="FCah8ORx9_7Y5or5nvMT-308" source="OWotIDpkWMKffGTOsaOe-118" target="OWotIDpkWMKffGTOsaOe-333">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="OWotIDpkWMKffGTOsaOe-118" value="Your honor, this test is very accurate and has never failed us. I see no reason to believe that it wasn&#39;t the defendant based on this DNA test." style="rounded=1;whiteSpace=wrap;html=1;shadow=0;strokeColor=#000000;strokeWidth=1;fillColor=#ffffff;" vertex="1" parent="FCah8ORx9_7Y5or5nvMT-308">
           <mxGeometry x="925" y="3180" width="210" height="60" as="geometry" />
         </mxCell>
@@ -1617,6 +1590,263 @@
         <mxCell id="OWotIDpkWMKffGTOsaOe-317" value="This person isn&#39;t the right person, this is clearly just made up" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;strokeColor=#000000;strokeWidth=1;fillColor=#ffffff;" vertex="1" parent="FCah8ORx9_7Y5or5nvMT-308">
           <mxGeometry x="1845" y="2960" width="210" height="60" as="geometry" />
         </mxCell>
+        <mxCell id="OWotIDpkWMKffGTOsaOe-330" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="FCah8ORx9_7Y5or5nvMT-308" source="OWotIDpkWMKffGTOsaOe-326" target="OWotIDpkWMKffGTOsaOe-329">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OWotIDpkWMKffGTOsaOe-326" value="Huh... the system checks out. There is indeed another person with your same last name..." style="rounded=1;whiteSpace=wrap;html=1;shadow=0;strokeColor=#000000;strokeWidth=1;fillColor=#ffffff;" vertex="1" parent="FCah8ORx9_7Y5or5nvMT-308">
+          <mxGeometry x="2150" y="2840" width="210" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="OWotIDpkWMKffGTOsaOe-341" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="FCah8ORx9_7Y5or5nvMT-308" source="OWotIDpkWMKffGTOsaOe-329" target="OWotIDpkWMKffGTOsaOe-332">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2255" y="3350" />
+              <mxPoint x="1590" y="3350" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OWotIDpkWMKffGTOsaOe-329" value="Well, what happened to the money then? Do you have proof that your brother has it?" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;strokeColor=#000000;strokeWidth=1;fillColor=#ffffff;" vertex="1" parent="FCah8ORx9_7Y5or5nvMT-308">
+          <mxGeometry x="2150" y="3180" width="210" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="OWotIDpkWMKffGTOsaOe-362" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="FCah8ORx9_7Y5or5nvMT-308" source="OWotIDpkWMKffGTOsaOe-331" target="OWotIDpkWMKffGTOsaOe-358">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OWotIDpkWMKffGTOsaOe-331" value="I don&#39;t remember..." style="rounded=0;whiteSpace=wrap;html=1;shadow=0;strokeColor=#000000;strokeWidth=1;fillColor=#ffffff;" vertex="1" parent="FCah8ORx9_7Y5or5nvMT-308">
+          <mxGeometry x="1160" y="3509" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="OWotIDpkWMKffGTOsaOe-342" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="FCah8ORx9_7Y5or5nvMT-308" source="OWotIDpkWMKffGTOsaOe-332" target="OWotIDpkWMKffGTOsaOe-337">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OWotIDpkWMKffGTOsaOe-353" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="FCah8ORx9_7Y5or5nvMT-308" source="OWotIDpkWMKffGTOsaOe-332" target="OWotIDpkWMKffGTOsaOe-336">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OWotIDpkWMKffGTOsaOe-354" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="FCah8ORx9_7Y5or5nvMT-308" source="OWotIDpkWMKffGTOsaOe-332" target="OWotIDpkWMKffGTOsaOe-334">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OWotIDpkWMKffGTOsaOe-355" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="FCah8ORx9_7Y5or5nvMT-308" source="OWotIDpkWMKffGTOsaOe-332" target="OWotIDpkWMKffGTOsaOe-331">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OWotIDpkWMKffGTOsaOe-356" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="FCah8ORx9_7Y5or5nvMT-308" source="OWotIDpkWMKffGTOsaOe-332" target="OWotIDpkWMKffGTOsaOe-335">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OWotIDpkWMKffGTOsaOe-332" value="Found your wallet" style="rhombus;whiteSpace=wrap;html=1;rounded=0;shadow=0;strokeColor=#000000;strokeWidth=1;fillColor=#ffffff;" vertex="1" parent="FCah8ORx9_7Y5or5nvMT-308">
+          <mxGeometry x="1520" y="3360" width="140" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="OWotIDpkWMKffGTOsaOe-339" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="FCah8ORx9_7Y5or5nvMT-308" source="OWotIDpkWMKffGTOsaOe-333" target="OWotIDpkWMKffGTOsaOe-332">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1030" y="3350" />
+              <mxPoint x="1590" y="3350" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OWotIDpkWMKffGTOsaOe-333" value="What did you do with the money? Where is it now?" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;strokeColor=#000000;strokeWidth=1;fillColor=#ffffff;" vertex="1" parent="FCah8ORx9_7Y5or5nvMT-308">
+          <mxGeometry x="925" y="3270" width="210" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="OWotIDpkWMKffGTOsaOe-361" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="FCah8ORx9_7Y5or5nvMT-308" source="OWotIDpkWMKffGTOsaOe-334" target="OWotIDpkWMKffGTOsaOe-357">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OWotIDpkWMKffGTOsaOe-334" value="I don&#39;t have the money!" style="rounded=0;whiteSpace=wrap;html=1;shadow=0;strokeColor=#000000;strokeWidth=1;fillColor=#ffffff;" vertex="1" parent="FCah8ORx9_7Y5or5nvMT-308">
+          <mxGeometry x="1350" y="3509" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="OWotIDpkWMKffGTOsaOe-363" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="FCah8ORx9_7Y5or5nvMT-308" source="OWotIDpkWMKffGTOsaOe-335" target="OWotIDpkWMKffGTOsaOe-358">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OWotIDpkWMKffGTOsaOe-335" value="I plead the fifth" style="rounded=0;whiteSpace=wrap;html=1;shadow=0;strokeColor=#000000;strokeWidth=1;fillColor=#ffffff;" vertex="1" parent="FCah8ORx9_7Y5or5nvMT-308">
+          <mxGeometry x="1010" y="3509" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="OWotIDpkWMKffGTOsaOe-360" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="FCah8ORx9_7Y5or5nvMT-308" source="OWotIDpkWMKffGTOsaOe-336" target="OWotIDpkWMKffGTOsaOe-357">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OWotIDpkWMKffGTOsaOe-336" value="I used it to pay off my debts." style="rounded=0;whiteSpace=wrap;html=1;shadow=0;strokeColor=#000000;strokeWidth=1;fillColor=#ffffff;" vertex="1" parent="FCah8ORx9_7Y5or5nvMT-308">
+          <mxGeometry x="1530" y="3509" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="OWotIDpkWMKffGTOsaOe-352" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="FCah8ORx9_7Y5or5nvMT-308" source="OWotIDpkWMKffGTOsaOe-337" target="OWotIDpkWMKffGTOsaOe-343">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OWotIDpkWMKffGTOsaOe-337" value="I have my wallot to prove that I don&#39;t have the money" style="rounded=0;whiteSpace=wrap;html=1;shadow=0;strokeColor=#000000;strokeWidth=1;fillColor=#ffffff;" vertex="1" parent="FCah8ORx9_7Y5or5nvMT-308">
+          <mxGeometry x="1785" y="3370" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="OWotIDpkWMKffGTOsaOe-348" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="FCah8ORx9_7Y5or5nvMT-308" source="OWotIDpkWMKffGTOsaOe-343" target="OWotIDpkWMKffGTOsaOe-344">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OWotIDpkWMKffGTOsaOe-349" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="FCah8ORx9_7Y5or5nvMT-308" source="OWotIDpkWMKffGTOsaOe-343" target="OWotIDpkWMKffGTOsaOe-345">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OWotIDpkWMKffGTOsaOe-350" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="FCah8ORx9_7Y5or5nvMT-308" source="OWotIDpkWMKffGTOsaOe-343" target="OWotIDpkWMKffGTOsaOe-346">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OWotIDpkWMKffGTOsaOe-351" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="FCah8ORx9_7Y5or5nvMT-308" source="OWotIDpkWMKffGTOsaOe-343" target="OWotIDpkWMKffGTOsaOe-347">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OWotIDpkWMKffGTOsaOe-343" value="How does that prove it?" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;strokeColor=#000000;strokeWidth=1;fillColor=#ffffff;" vertex="1" parent="FCah8ORx9_7Y5or5nvMT-308">
+          <mxGeometry x="1740" y="3509" width="210" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="OWotIDpkWMKffGTOsaOe-365" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="FCah8ORx9_7Y5or5nvMT-308" source="OWotIDpkWMKffGTOsaOe-344" target="OWotIDpkWMKffGTOsaOe-364">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OWotIDpkWMKffGTOsaOe-344" value="No idea, its your job to investigate." style="rounded=0;whiteSpace=wrap;html=1;shadow=0;strokeColor=#000000;strokeWidth=1;fillColor=#ffffff;" vertex="1" parent="FCah8ORx9_7Y5or5nvMT-308">
+          <mxGeometry x="1785" y="3610" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="OWotIDpkWMKffGTOsaOe-367" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="FCah8ORx9_7Y5or5nvMT-308" source="OWotIDpkWMKffGTOsaOe-345" target="OWotIDpkWMKffGTOsaOe-364">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OWotIDpkWMKffGTOsaOe-345" value="I plead the fifth" style="rounded=0;whiteSpace=wrap;html=1;shadow=0;strokeColor=#000000;strokeWidth=1;fillColor=#ffffff;" vertex="1" parent="FCah8ORx9_7Y5or5nvMT-308">
+          <mxGeometry x="1950" y="3610" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="OWotIDpkWMKffGTOsaOe-366" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="FCah8ORx9_7Y5or5nvMT-308" source="OWotIDpkWMKffGTOsaOe-346" target="OWotIDpkWMKffGTOsaOe-364">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OWotIDpkWMKffGTOsaOe-346" value="Clearly I&#39;m broke and I need the money" style="rounded=0;whiteSpace=wrap;html=1;shadow=0;strokeColor=#000000;strokeWidth=1;fillColor=#ffffff;" vertex="1" parent="FCah8ORx9_7Y5or5nvMT-308">
+          <mxGeometry x="2110" y="3610" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="OWotIDpkWMKffGTOsaOe-374" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="FCah8ORx9_7Y5or5nvMT-308" source="OWotIDpkWMKffGTOsaOe-347" target="OWotIDpkWMKffGTOsaOe-372">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OWotIDpkWMKffGTOsaOe-347" value="It fell out of my pocket when I was arrested. Thus, I had no money on me." style="rounded=0;whiteSpace=wrap;html=1;shadow=0;strokeColor=#000000;strokeWidth=1;fillColor=#ffffff;" vertex="1" parent="FCah8ORx9_7Y5or5nvMT-308">
+          <mxGeometry x="2280" y="3610" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="OWotIDpkWMKffGTOsaOe-369" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="FCah8ORx9_7Y5or5nvMT-308" source="OWotIDpkWMKffGTOsaOe-357" target="OWotIDpkWMKffGTOsaOe-359">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1515" y="3880" />
+              <mxPoint x="1710" y="3880" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OWotIDpkWMKffGTOsaOe-357" value="So the money is gone...&lt;br&gt;This isn&#39;t a good look for you." style="rounded=1;whiteSpace=wrap;html=1;shadow=0;strokeColor=#000000;strokeWidth=1;fillColor=#ffffff;" vertex="1" parent="FCah8ORx9_7Y5or5nvMT-308">
+          <mxGeometry x="1410" y="3610" width="210" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="OWotIDpkWMKffGTOsaOe-370" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="FCah8ORx9_7Y5or5nvMT-308" source="OWotIDpkWMKffGTOsaOe-358" target="OWotIDpkWMKffGTOsaOe-359">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1150" y="3880" />
+              <mxPoint x="1710" y="3880" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OWotIDpkWMKffGTOsaOe-358" value="I expected nothing less of an answer." style="rounded=1;whiteSpace=wrap;html=1;shadow=0;strokeColor=#000000;strokeWidth=1;fillColor=#ffffff;" vertex="1" parent="FCah8ORx9_7Y5or5nvMT-308">
+          <mxGeometry x="1045" y="3610" width="210" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="OWotIDpkWMKffGTOsaOe-384" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="FCah8ORx9_7Y5or5nvMT-308" source="OWotIDpkWMKffGTOsaOe-359" target="OWotIDpkWMKffGTOsaOe-381">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OWotIDpkWMKffGTOsaOe-359" value="Your honor, my interrogation is complete. I rest my case" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;strokeColor=#000000;strokeWidth=1;fillColor=#ffffff;" vertex="1" parent="FCah8ORx9_7Y5or5nvMT-308">
+          <mxGeometry x="1605" y="3990" width="210" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="OWotIDpkWMKffGTOsaOe-368" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="FCah8ORx9_7Y5or5nvMT-308" source="OWotIDpkWMKffGTOsaOe-364" target="OWotIDpkWMKffGTOsaOe-359">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OWotIDpkWMKffGTOsaOe-364" value="Take this trial seriously, your life is on the line. Since you have no serious response, I can only assume you are hiding the money." style="rounded=1;whiteSpace=wrap;html=1;shadow=0;strokeColor=#000000;strokeWidth=1;fillColor=#ffffff;" vertex="1" parent="FCah8ORx9_7Y5or5nvMT-308">
+          <mxGeometry x="1911" y="3710" width="210" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="OWotIDpkWMKffGTOsaOe-373" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="FCah8ORx9_7Y5or5nvMT-308" source="OWotIDpkWMKffGTOsaOe-371" target="OWotIDpkWMKffGTOsaOe-359">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2340" y="3880" />
+              <mxPoint x="1710" y="3880" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OWotIDpkWMKffGTOsaOe-371" value="It still doesn&#39;t explain the DNA match/witness. This claim is weak." style="rounded=1;whiteSpace=wrap;html=1;shadow=0;strokeColor=#000000;strokeWidth=1;fillColor=#ffffff;" vertex="1" parent="FCah8ORx9_7Y5or5nvMT-308">
+          <mxGeometry x="2235" y="3800" width="210" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="OWotIDpkWMKffGTOsaOe-375" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="FCah8ORx9_7Y5or5nvMT-308" source="OWotIDpkWMKffGTOsaOe-372" target="OWotIDpkWMKffGTOsaOe-371">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OWotIDpkWMKffGTOsaOe-379" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="FCah8ORx9_7Y5or5nvMT-308" source="OWotIDpkWMKffGTOsaOe-372" target="OWotIDpkWMKffGTOsaOe-376">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OWotIDpkWMKffGTOsaOe-372" value="Convinced the court about your brother" style="rhombus;whiteSpace=wrap;html=1;rounded=0;shadow=0;strokeColor=#000000;strokeWidth=1;fillColor=#ffffff;" vertex="1" parent="FCah8ORx9_7Y5or5nvMT-308">
+          <mxGeometry x="2270" y="3700" width="140" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="OWotIDpkWMKffGTOsaOe-378" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="FCah8ORx9_7Y5or5nvMT-308" source="OWotIDpkWMKffGTOsaOe-376" target="OWotIDpkWMKffGTOsaOe-377">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OWotIDpkWMKffGTOsaOe-376" value="It checks out with your earlier evidence that it was actually your twin brother... We may have actually gotten the wrong person." style="rounded=1;whiteSpace=wrap;html=1;shadow=0;strokeColor=#000000;strokeWidth=1;fillColor=#ffffff;" vertex="1" parent="FCah8ORx9_7Y5or5nvMT-308">
+          <mxGeometry x="2500" y="3710" width="210" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="OWotIDpkWMKffGTOsaOe-380" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="FCah8ORx9_7Y5or5nvMT-308" source="OWotIDpkWMKffGTOsaOe-377" target="OWotIDpkWMKffGTOsaOe-359">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2605" y="3880" />
+              <mxPoint x="1710" y="3880" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OWotIDpkWMKffGTOsaOe-377" value="Lawyer: Correct, all the evidence points to my defendant being the wrong suspect." style="rounded=1;whiteSpace=wrap;html=1;shadow=0;strokeColor=#000000;strokeWidth=1;fillColor=#ffffff;" vertex="1" parent="FCah8ORx9_7Y5or5nvMT-308">
+          <mxGeometry x="2500" y="3800" width="210" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="OWotIDpkWMKffGTOsaOe-385" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="FCah8ORx9_7Y5or5nvMT-308" source="OWotIDpkWMKffGTOsaOe-381" target="OWotIDpkWMKffGTOsaOe-382">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1710" y="4200" />
+              <mxPoint x="1490" y="4200" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OWotIDpkWMKffGTOsaOe-386" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="FCah8ORx9_7Y5or5nvMT-308" source="OWotIDpkWMKffGTOsaOe-381" target="OWotIDpkWMKffGTOsaOe-383">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1710" y="4200" />
+              <mxPoint x="1920" y="4200" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OWotIDpkWMKffGTOsaOe-381" value="Judge: so what do you plead?" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;strokeColor=#000000;strokeWidth=1;fillColor=#ffffff;" vertex="1" parent="FCah8ORx9_7Y5or5nvMT-308">
+          <mxGeometry x="1605" y="4130" width="210" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="OWotIDpkWMKffGTOsaOe-388" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="FCah8ORx9_7Y5or5nvMT-308" source="OWotIDpkWMKffGTOsaOe-382" target="OWotIDpkWMKffGTOsaOe-387">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OWotIDpkWMKffGTOsaOe-382" value="Guilty" style="rounded=0;whiteSpace=wrap;html=1;shadow=0;strokeColor=#000000;strokeWidth=1;fillColor=#ffffff;" vertex="1" parent="FCah8ORx9_7Y5or5nvMT-308">
+          <mxGeometry x="1430" y="4220" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="OWotIDpkWMKffGTOsaOe-395" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="FCah8ORx9_7Y5or5nvMT-308" source="OWotIDpkWMKffGTOsaOe-383" target="OWotIDpkWMKffGTOsaOe-389">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OWotIDpkWMKffGTOsaOe-383" value="Not guilty" style="rounded=0;whiteSpace=wrap;html=1;shadow=0;strokeColor=#000000;strokeWidth=1;fillColor=#ffffff;" vertex="1" parent="FCah8ORx9_7Y5or5nvMT-308">
+          <mxGeometry x="1860" y="4220" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="OWotIDpkWMKffGTOsaOe-394" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="FCah8ORx9_7Y5or5nvMT-308" source="OWotIDpkWMKffGTOsaOe-387" target="OWotIDpkWMKffGTOsaOe-393">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OWotIDpkWMKffGTOsaOe-387" value="Then that settles it. The court finds you guilty of robbery of the restrurant. Your execution will be held in a couple of days." style="rounded=1;whiteSpace=wrap;html=1;shadow=0;strokeColor=#000000;strokeWidth=1;fillColor=#ffffff;" vertex="1" parent="FCah8ORx9_7Y5or5nvMT-308">
+          <mxGeometry x="1385" y="4420" width="210" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="OWotIDpkWMKffGTOsaOe-390" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="FCah8ORx9_7Y5or5nvMT-308" source="OWotIDpkWMKffGTOsaOe-389" target="OWotIDpkWMKffGTOsaOe-387">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OWotIDpkWMKffGTOsaOe-396" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="FCah8ORx9_7Y5or5nvMT-308" source="OWotIDpkWMKffGTOsaOe-389" target="OWotIDpkWMKffGTOsaOe-391">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OWotIDpkWMKffGTOsaOe-389" value="Convinced the court about your brother" style="rhombus;whiteSpace=wrap;html=1;rounded=0;shadow=0;strokeColor=#000000;strokeWidth=1;fillColor=#ffffff;" vertex="1" parent="FCah8ORx9_7Y5or5nvMT-308">
+          <mxGeometry x="1850" y="4300" width="140" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="OWotIDpkWMKffGTOsaOe-397" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="FCah8ORx9_7Y5or5nvMT-308" source="OWotIDpkWMKffGTOsaOe-391" target="OWotIDpkWMKffGTOsaOe-392">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OWotIDpkWMKffGTOsaOe-391" value="Then that settles it. The court has found you not guilty, as you have shown that it was actually your twin brother who committed the crime." style="rounded=1;whiteSpace=wrap;html=1;shadow=0;strokeColor=#000000;strokeWidth=1;fillColor=#ffffff;" vertex="1" parent="FCah8ORx9_7Y5or5nvMT-308">
+          <mxGeometry x="2120" y="4310" width="210" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="OWotIDpkWMKffGTOsaOe-398" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="FCah8ORx9_7Y5or5nvMT-308" source="OWotIDpkWMKffGTOsaOe-392" target="OWotIDpkWMKffGTOsaOe-393">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OWotIDpkWMKffGTOsaOe-392" value="We will be summoning him to court soon. I apologize for the false accusation and any time of yours we might have spent." style="rounded=1;whiteSpace=wrap;html=1;shadow=0;strokeColor=#000000;strokeWidth=1;fillColor=#ffffff;" vertex="1" parent="FCah8ORx9_7Y5or5nvMT-308">
+          <mxGeometry x="2120" y="4420" width="210" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="OWotIDpkWMKffGTOsaOe-393" value="This court is adjourned." style="rounded=1;whiteSpace=wrap;html=1;shadow=0;strokeColor=#000000;strokeWidth=1;fillColor=#ffffff;" vertex="1" parent="FCah8ORx9_7Y5or5nvMT-308">
+          <mxGeometry x="1725" y="4560" width="210" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="OWotIDpkWMKffGTOsaOe-421" value="Plea" style="swimlane;strokeWidth=3;" vertex="1" parent="FCah8ORx9_7Y5or5nvMT-308">
+          <mxGeometry x="1335" y="4080" width="1045" height="580" as="geometry">
+            <mxRectangle x="250" y="450" width="110" height="23" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OWotIDpkWMKffGTOsaOe-425" value="Where were you before?" style="swimlane;strokeWidth=3;" vertex="1" parent="FCah8ORx9_7Y5or5nvMT-308">
+          <mxGeometry x="250" y="1440" width="1190" height="510" as="geometry">
+            <mxRectangle x="250" y="450" width="110" height="23" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="FCah8ORx9_7Y5or5nvMT-362" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;shadow=0;endArrow=classic;endFill=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="FCah8ORx9_7Y5or5nvMT-359" target="FCah8ORx9_7Y5or5nvMT-308" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
@@ -1641,6 +1871,102 @@
               <mxPoint x="4162" y="2830" />
               <mxPoint x="4335" y="2830" />
             </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OWotIDpkWMKffGTOsaOe-328" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="OWotIDpkWMKffGTOsaOe-317">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="4390" y="6040" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OWotIDpkWMKffGTOsaOe-409" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="OWotIDpkWMKffGTOsaOe-399" target="OWotIDpkWMKffGTOsaOe-401">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OWotIDpkWMKffGTOsaOe-417" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="OWotIDpkWMKffGTOsaOe-399" target="OWotIDpkWMKffGTOsaOe-400">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OWotIDpkWMKffGTOsaOe-399" value="Found not guilty" style="rhombus;whiteSpace=wrap;html=1;rounded=0;shadow=0;strokeColor=#000000;strokeWidth=1;fillColor=#ffffff;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="5120" y="7570" width="140" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="OWotIDpkWMKffGTOsaOe-400" value="You win!!!!" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;strokeColor=#000000;strokeWidth=1;fillColor=#ffffff;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="5400" y="7580" width="210" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="OWotIDpkWMKffGTOsaOe-410" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="OWotIDpkWMKffGTOsaOe-401" target="OWotIDpkWMKffGTOsaOe-402">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OWotIDpkWMKffGTOsaOe-401" value="You appear in the execution chamber." style="rounded=1;whiteSpace=wrap;html=1;shadow=0;strokeColor=#000000;strokeWidth=1;fillColor=#ffffff;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="5085" y="7710" width="210" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="OWotIDpkWMKffGTOsaOe-411" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="OWotIDpkWMKffGTOsaOe-402" target="OWotIDpkWMKffGTOsaOe-403">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OWotIDpkWMKffGTOsaOe-414" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="OWotIDpkWMKffGTOsaOe-402" target="OWotIDpkWMKffGTOsaOe-405">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OWotIDpkWMKffGTOsaOe-402" value="Didn&#39;t talk to your lawyer" style="rhombus;whiteSpace=wrap;html=1;rounded=0;shadow=0;strokeColor=#000000;strokeWidth=1;fillColor=#ffffff;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="5120" y="7840" width="140" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="OWotIDpkWMKffGTOsaOe-412" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="OWotIDpkWMKffGTOsaOe-403" target="OWotIDpkWMKffGTOsaOe-404">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OWotIDpkWMKffGTOsaOe-403" value="Lawyer: Hey man, I&#39;m sorry for this outcome. You know, you would have had a better chance had you have come to speak to me before your trial." style="rounded=1;whiteSpace=wrap;html=1;shadow=0;strokeColor=#000000;strokeWidth=1;fillColor=#ffffff;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="5390" y="7850" width="210" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="OWotIDpkWMKffGTOsaOe-413" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="OWotIDpkWMKffGTOsaOe-404" target="OWotIDpkWMKffGTOsaOe-405">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OWotIDpkWMKffGTOsaOe-404" value="After all, it&#39;s your right to request a lawyer before a trial. The guard shouldn&#39;t refuse." style="rounded=1;whiteSpace=wrap;html=1;shadow=0;strokeColor=#000000;strokeWidth=1;fillColor=#ffffff;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="5390" y="7940" width="210" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="OWotIDpkWMKffGTOsaOe-415" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="OWotIDpkWMKffGTOsaOe-405" target="OWotIDpkWMKffGTOsaOe-406">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OWotIDpkWMKffGTOsaOe-405" value="Guard: Your execution is in 10 minutes. Don&#39;t keep me waiting, I have important business to attend to." style="rounded=1;whiteSpace=wrap;html=1;shadow=0;strokeColor=#000000;strokeWidth=1;fillColor=#ffffff;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="5085" y="8040" width="210" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="OWotIDpkWMKffGTOsaOe-416" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="OWotIDpkWMKffGTOsaOe-406" target="OWotIDpkWMKffGTOsaOe-407">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OWotIDpkWMKffGTOsaOe-406" value="In your pocket, you feel a fortune cookie. You open it" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;strokeColor=#000000;strokeWidth=1;fillColor=#ffffff;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="5085" y="8140" width="210" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="OWotIDpkWMKffGTOsaOe-408" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="OWotIDpkWMKffGTOsaOe-407" target="FCah8ORx9_7Y5or5nvMT-1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="5190" y="8310" />
+              <mxPoint x="2570" y="8310" />
+              <mxPoint x="2570" y="70" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OWotIDpkWMKffGTOsaOe-407" value="&quot;Failure is the chance to do better next time.&quot;" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;strokeColor=#000000;strokeWidth=1;fillColor=#ffffff;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="5085" y="8230" width="210" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="OWotIDpkWMKffGTOsaOe-418" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="OWotIDpkWMKffGTOsaOe-393" target="OWotIDpkWMKffGTOsaOe-399">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OWotIDpkWMKffGTOsaOe-419" value="Execution room" style="swimlane;strokeWidth=3;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="4990" y="7670" width="670" height="630" as="geometry">
+            <mxRectangle x="250" y="450" width="110" height="23" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OWotIDpkWMKffGTOsaOe-423" value="Prosecutor interrogates you" style="swimlane;strokeWidth=3;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="3570" y="3380" width="2510" height="3550" as="geometry">
+            <mxRectangle x="250" y="450" width="110" height="23" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OWotIDpkWMKffGTOsaOe-424" value="Why did you do it?" style="swimlane;strokeWidth=3;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="3630" y="3490" width="1870" height="800" as="geometry">
+            <mxRectangle x="250" y="450" width="110" height="23" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OWotIDpkWMKffGTOsaOe-426" value="DNA match?" style="swimlane;strokeWidth=3;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="3610" y="4820" width="2180" height="1180" as="geometry">
+            <mxRectangle x="250" y="450" width="110" height="23" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OWotIDpkWMKffGTOsaOe-427" value="Where is the money?" style="swimlane;strokeWidth=3;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="4140" y="6010" width="1930" height="800" as="geometry">
+            <mxRectangle x="250" y="450" width="110" height="23" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
       </root>
