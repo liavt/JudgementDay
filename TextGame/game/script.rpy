@@ -21,42 +21,21 @@ define j = Character("Judge")
 define b = Character("Bartender")
 
 # Background images
-image courthouse = "BG_Court House2.jpg"
+image courthouse = "bg court house.jpg"
 
 # character sprites
-image cellmate = "sprite cellmate.png"
-image guard = "sprite guard.png"
-image lawyer = "sprite lawyer.png"
-image prosecutor = "sprite prosecutor.png"
-image judge = "sprite judge.png"
-image bartender = "sprite bartender.png"
+image c = "sprite cellmate.png"
+image g = "sprite guard.png"
+image l = "sprite lawyer small.png"
+image p = "sprite prosecutor.png"
+image j = "sprite judge.png"
+image b = "sprite bartender.png"
 
 
 # The game starts here.
 
 label start:
-
-    # Show a background. This uses a placeholder by default, but you can
-    # add a file (named either "bg room.png" or "bg room.jpg") to the
-    # images directory to show it.
-
-    scene courthouse
-
-    # This shows a character sprite. A placeholder is used, but you can
-    # replace it by adding a file named "eileen happy.png" to the images
-    # directory.
-
-    show y happy
-
-    # These display lines of dialogue.
-
-    y "You've created a new Ren'Py game."
-
-    y "Once you add a story, pictures, and music, you can release it to the world!"
     jump court
-
-    # This ends the game.
-
     return
 
 # Courthouse code
@@ -64,8 +43,9 @@ label start:
 default guilty = False
 
 label court:
-    scene bg courthouse
-    show j
+    scene courthouse
+    show j at right
+    with dissolve
     j "Order, order!"
     j "We will now begin case #2158673"
     j "Our defendant: Adam Smith"
@@ -82,6 +62,9 @@ label court:
     jump courtwhy
 
 label courtwhy:
+    hide j
+    show p
+    with dissolve
     p "Hello, I will ask you some questions and you must answer nothing but the truth. Are you ready to begin?"
     menu:
         "Yes":
@@ -118,7 +101,8 @@ label courtwhy:
 
 label courtalibi:
     p "Well, do you have an alibi?"
-    show b
+    show b at left
+    with dissolve
     p "We have a witness testify that he saw you walk through the door around the time of the robbery."
     p "He is the bartender of the place, so he was behind the counter."
     menu:
@@ -151,7 +135,8 @@ label courtalibifail:
 
 label courtwhynoanswer:
     p "Don't play dumb, we have a witness testifying they saw you."
-    show b
+    show b at left
+    with dissolve
     l "Your honor, my defendant does not have to answer a question if they don't want to."
     j "Correct. Prosecutor, continue to your next question."
     $ guilty = True

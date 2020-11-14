@@ -1,19 +1,19 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-While loading <'Image' u'backgrounds\\Court House.jpg'>:
-  File "game/script.rpy", line 46, in script
-    y "You've created a new Ren'Py game."
+While loading <'Image' u'sprite judge small.png'>:
+  File "game/script.rpy", line 69, in script
+    y "Actually, I don't even remember what my name is..."
   File "renpy/common/000window.rpy", line 98, in _window_auto_callback
     _window_show()
   File "renpy/common/000window.rpy", line 60, in _window_show
     renpy.with_statement(trans)
-Exception: Backslash in filename, use '/' instead: u'backgrounds\\Court House.jpg'
+Exception: Could not load image u'sprite judge small.png': error('Unsupported image format',)
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 46, in script
-    y "You've created a new Ren'Py game."
+  File "game/script.rpy", line 69, in script
+    y "Actually, I don't even remember what my name is..."
   File "C:\Users\user\Downloads\renpy-7.3.5-sdk\renpy\ast.py", line 671, in execute
     statement_name("say")
   File "C:\Users\user\Downloads\renpy-7.3.5-sdk\renpy\ast.py", line 45, in statement_name
@@ -77,11 +77,11 @@ Full traceback:
     surf = image.load()
   File "C:\Users\user\Downloads\renpy-7.3.5-sdk\renpy\display\im.py", line 628, in load
     surf = renpy.display.pgrender.load_image(renpy.loader.load(self.filename), self.filename)
-  File "C:\Users\user\Downloads\renpy-7.3.5-sdk\renpy\loader.py", line 567, in load
-    raise Exception("Backslash in filename, use '/' instead: %r" % name)
-Exception: Backslash in filename, use '/' instead: u'backgrounds\\Court House.jpg'
+  File "C:\Users\user\Downloads\renpy-7.3.5-sdk\renpy\display\pgrender.py", line 162, in load_image
+    raise Exception("Could not load image {!r}: {!r}".format(filename, e))
+Exception: Could not load image u'sprite judge small.png': error('Unsupported image format',)
 
 Windows-8-6.2.9200
 Ren'Py 7.3.5.606
 TextGame 1.0
-Sat Nov 14 03:56:03 2020
+Sat Nov 14 04:22:35 2020
