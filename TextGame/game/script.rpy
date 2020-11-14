@@ -20,6 +20,17 @@ define p = Character("Prosecutor")
 define j = Character("Judge")
 define b = Character("Bartender")
 
+# Background images
+image courthouse = "BG_Court House2.jpg"
+
+# character sprites
+image cellmate = "sprite cellmate.png"
+image guard = "sprite guard.png"
+image lawyer = "sprite lawyer.png"
+image prosecutor = "sprite prosecutor.png"
+image judge = "sprite judge.png"
+image bartender = "sprite bartender.png"
+
 
 # The game starts here.
 
@@ -29,7 +40,7 @@ label start:
     # add a file (named either "bg room.png" or "bg room.jpg") to the
     # images directory to show it.
 
-    scene bg room
+    scene courthouse
 
     # This shows a character sprite. A placeholder is used, but you can
     # replace it by adding a file named "eileen happy.png" to the images
