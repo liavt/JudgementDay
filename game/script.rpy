@@ -1,5 +1,12 @@
 # Only GLOBALS
 
+# Global variables
+default hasWallet = False
+default hasBeer = False
+default hasFingerprints = False
+default playersName = ""
+default talkedToLawyer = False
+
 # Background images
 image cell = "bg prison cell"
 image courthouse = "bg court house.jpg"

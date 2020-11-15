@@ -1,17 +1,10 @@
 ﻿# From liav:
 # Variables for court:
-# Set these before
-default hasWallet = False
-default hasBeer = False
-default hasFingerprints = False
-default playersName = ""
-default talkedToLawyer = False
-
-# Courthouse code
-
 default guilty = False
 default mentionedBrother = False
 default convincedAboutBrother = False
+
+# Courthouse code
 
 label court:
     scene courthouse

@@ -1,7 +1,7 @@
 # From ophir:
 # Variables for guard
 default guardAccusation = ""
-default isRachel = ""
+default hasRachel = ""
 
 label guard:
     hide c
@@ -58,18 +58,18 @@ label guard:
                 hide g
                 show y at left
                 python:
-                    isRachel = renpy.input(guardAccusation)
-                    isRachel = isRachel.strip()
+                    hasRachel = renpy.input(guardAccusation)
+                    hasRachel = hasRachel.strip()
                 hide y
                 show g at right
-                if guardAccusation == "I know you have an affair with __________" and "rachel" in isRachel.lower():
+                if guardAccusation == "I know you have an affair with __________" and "rachel" in hasRachel.lower():
                     g "Oh man, who told you about her, I'm going to make him miserable!!! \nAnyway, I'll take you there"
                     jump securityRoom
                 elif guardAccusation == "I know you have an affair with __________" and i == 2:
                     g "Haha, you've got nothing on me, you're going to your execution as planned"
                     g "Now, turn against the wall and put your hands on it. If you do anything suspicions, I won't hesitate to use my taser gun"
                     jump court
-                g "I don't know any [isRachel]"
+                g "I don't know any [hasRachel]"
                 $ i += 1
             hide y
             show g at right
@@ -91,4 +91,5 @@ label guard:
                     hide y
                     show g at right
                     g "Oh, you're familiar with the law, I didn't know about that, I'll take you to your lawyer"
+                    $ talkedToLawyer = True
                     jump lawyer

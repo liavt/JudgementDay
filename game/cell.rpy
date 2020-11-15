@@ -26,6 +26,7 @@ label cell:
             hide y
             show c at right
             c "What do they think you did?"
+    # Reason for prison
     hide c
     show y at left
     menu:
@@ -40,6 +41,7 @@ label cell:
                 $ whyHere = 2
         "None of your business":
                 $ whyHere = 3
+    # Did it or not
     hide y
     show c at right
     c "Did you do it?"
@@ -64,6 +66,7 @@ label cell:
                     c "How much?"
                     hide c
                     show y at left
+                    # Money loop
                     menu:
                         "More than you can think of":
                             hide y
