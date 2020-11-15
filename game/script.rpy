@@ -6,7 +6,7 @@ image courthouse = "bg court house.jpg"
 image securityRoom = "bg security room.jpg"
 
 # character sprites
-image y = "sprite prisoner 4.png"
+image y = "sprite player.png"
 image c = "sprite cellmate.png"
 image g = "sprite guard.png"
 image l = "sprite lawyer small.png"
