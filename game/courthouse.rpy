@@ -10,6 +10,8 @@ default talkedToLawyer = False
 # Courthouse code
 
 default guilty = False
+default mentionedBrother = False
+default convincedAboutBrother = False
 
 label court:
     scene courthouse
@@ -44,6 +46,7 @@ label courtwhy:
     menu:
         "My long lost twin brother did it, not me!":
             p "This is an interesting claim..."
+            $ mentionedBrother = True
             jump courtalibi
         "I didn't do it!":
             jump courtalibi
@@ -139,3 +142,151 @@ label courtwherefail:
 
 label courtdna:
     p "We also found an almost perfect DNA match of the door handle of the restaurant. Do you have anything to say about this?"
+    menu:
+        "I plead the fifth":
+            p "Another dodged question..."
+            jump courtdnafail
+        "I have no clue to be honest":
+            p "You seem to not have much to say."
+            jump courtdnafail
+        "Your test must be faulty, it wasn't me!":
+            jump courtdnafaultytest
+        "I did walk into the restuarant that day...":
+            p "Which lines up with the results of the DNA test."
+            jump courtdnafail
+        "I did the crime, so yes that makes sense.":
+            l "Why did you say that!"
+            jump courtdnafail
+        "I have evidence showing a mismatch of fingerprints" if hasFingerprints:
+            p "And how is that relevant?"
+            menu:
+                "Isn't really.":
+                    p "Please stop wasting the time of the court..."
+                    jump courtdnafail
+                "I don't know, I'm no scientist.":
+                    p "Please stop wasting our time..."
+                    jump courtdnafail
+                "The test must be wrong then.":
+                    jump courtdnafaultytest
+                "Like I mentioned before, my long lost brother did the crime. Your DNA test simply picked up his DNA." if mentionedBrother:
+                    p "A long lost brother? You are seriously claiming we have the wrong guy?"
+                    menu:
+                        "I plead the fifth.":
+                            p "What a waste of time..."
+                            jump courtdnafail
+                        "Maybe?":
+                            p "What a waste of time..."
+                            jump courtdnafail
+                        "I have heard more crazy things before.":
+                            jump courtdnabrother
+                        "Yes, and I can prove it.":
+                            jump courtdnabrother
+                        "That's exactly what I am saying! Aren't you listening?":
+                            jump courtdnabrother
+
+label courtdnabrother:
+    p "Well, do you have any proof of your 'long lost brother?'"
+    menu:
+        "None, just trust me bro.":
+            p "Please be serious in the court."
+            jump courtdnafail
+        "Just think about it, it explains everything!":
+            p "Not really..."
+            jump courtdnafail
+        "I have his ID number, you can check the database!":
+        # TODO put brother id number
+            p "Well, what happened to the money then? Do you have proof that your brother has it?"
+            jump courtmoney
+
+label courtdnafaultytest:
+    p "Do you have any evidence that this test is faulty?"
+    menu:
+        "No":
+            p "Very well then."
+        "Yes, because I know I'm innocent.":
+            p "Classic defense. Everyone says that, you aren't special."
+        "Yes, I know a guy who worked on it. He says it's fake news!":
+            p "Nice try, but hearsay isn't valid evidence."
+    jump courtdnafail
+
+label courtdnafail:
+    $ guilty = True
+    p "Your honor, this test is very accurate and has never failed us. I see no reason to believe that it wasn't the defendant based on this DNA test."
+    p "Onto my next question."
+    p "Since you so clearly stole the money, where is it now? What did you do with the money?"
+    jump courtmoney
+
+label courtmoney:
+    menu:
+        "I plead the fifth.":
+            p "I expected nothing worse of an answer."
+            $ guilty = True
+        "I don't recall...":
+            p "You must have some clear memory issues then."
+            $ guilty = True
+        "I don't have the money!":
+            p "The restuarant doesn't have the money either, so you must be lying."
+            $ guilty = True
+        "I used it to pay off my debts.":
+            l "Why did you say that?!"
+            $ guilty = True
+        "I have my wallot to prove that I don't have the money":
+            p "And how does that prove it exactly?"
+            menu:
+                "No idea, it's your job to investigate, not mine.":
+                    p "Please take this trial seriously, your life is on the line."
+                    p "Since you are clearly joking, I must only assume you are guilty and trying to distract us."
+                    $ guilty = True
+                "Clearly I'm broke and need the money.":
+                    p "Doesn't mean that it's okay to steal."
+                    $ guilty = True
+                "It fell out of my pocket when I was arrested. Thus, I had no money.":
+                    p "So who has the money then, if not you?"
+                    menu:
+                        "My twin brother":
+                            if convincedAboutBrother:
+                                p "Huh, it checks out with your earlier evidence too... You have a good point."
+                                if guilty:
+                                    p "But there is still other evidence outstanding that you have failed to mention."
+                                else:
+                                    l "Correct, all the evidence points to my defendant being the wrong person."
+                                    p "I guess I can see that..."
+                            else:
+                                p "What an outlandish idea. With no proof, I can't take you seriously."
+                                $ guilty = True
+                        "The Mafia":
+                            p "Funny joke. Please don't be a comedian during your final hours."
+                            $ guilty = True
+                        "I don't know, I just know I'm innocent!":
+                            p "With no proof, I can't take you seriously."
+                            $ guilty = True
+                        "You, clearly!":
+                            p "Your honor, this trial is clearly a joke."
+                            $ guilty = True
+    jump courtplea
+
+label courtplea:
+    p "Your honor, that ends my interrogation."
+    p "I rest my case."
+    j "So, what do you plead?"
+    menu:
+        "Guilty":
+            $ guilty = True
+        "Not guilty":
+            pass
+    j "Then that settles it."
+    j "The court finds you..."
+    if guilty:
+        j "Guilty, on a charge of robbery of a Chinese restuarant."
+        j "Your sentence:"
+        j "Execution."
+    else:
+        j "Not guilty."
+        j "You have shown sufficient evidence that it was indeed your twin brother who commited the crime."
+        j "He will be appearing before the court shortly."
+        j "I apologize for wasting your time, I hope it didn't take too long."
+    j "This court is adjourned."
+    if guilty:
+        jump execution
+    else:
+        "You win!!!!"

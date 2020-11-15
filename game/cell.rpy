@@ -38,7 +38,7 @@ label cell:
                 $ whyHere = 1
         "I killed someone":
                 $ whyHere = 2
-        "Non of your business":
+        "None of your business":
                 $ whyHere = 3
     hide y
     show c at right
@@ -46,7 +46,7 @@ label cell:
     if whyHere == 3:
         hide c
         show y at left
-        y "I told you, it's non of your business!"
+        y "I told you, it's none of your business!"
         jump guard
     else:
         hide c
@@ -84,7 +84,7 @@ label cell:
                                 hide c
                                 show y at left
                                 python:
-                                    moneyString = renpy.input("How much does your cellmate want?\n(between 0 to 10000)", allow="0123456789")
+                                    moneyString = renpy.input("How much do you want to tell him?\n(between 0 to 10000)", allow="0123456789")
                                     moneyString = moneyString.strip()
                                     try:
                                         moneyInt = int(moneyString)
@@ -98,10 +98,10 @@ label cell:
                                 elif moneyInt > 5500:
                                     hide c
                                     show y at left
-                                    c "Even less will be fine"
+                                    c "Nah, you are clearly faking it. No way you stole more than $5000 from a Chinese place."
                                 else:
                                     hide c
                                     show y at left
-                                    c "Haha, try harder, I believe you can give me much more money"
+                                    c "Haha, try harder, I believe you can give me much more money. If you don't have more than a couple thousand, what's the point?"
                                 $ i += 1
                             jump guard
