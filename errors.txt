@@ -2,13 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 161: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
-    "I don't really know..."
-                            ^
-
-File "game/script.rpy", line 175: expected ':' not found.
-    label courtdna
-                  ^
+File "game/guard.rpy", line 18: end of line expected.
+    jump court;
+              ^
 
 Ren'Py Version: Ren'Py 7.3.5.606
-Thu Nov 12 15:22:00 2020
+Sun Nov 15 18:18:11 2020

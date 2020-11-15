@@ -1,28 +1,22 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/cell.rpy", line 94, in script
-    if moneyInt >= 4500 or moenyInt <= 5500:
-  File "game/cell.rpy", line 94, in <module>
-    if moneyInt >= 4500 or moenyInt <= 5500:
-NameError: name 'moenyInt' is not defined
+  File "game/cell.rpy", line 109, in script
+    jump secuirtyRoom
+ScriptError: could not find label 'secuirtyRoom'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/cell.rpy", line 94, in script
-    if moneyInt >= 4500 or moenyInt <= 5500:
-  File "C:\Users\ofir2\OneDrive - The Interdisciplinary Center Herzliya IDC\IDC\3rd Semester\InGame\renpy-7.3.5-sdk\renpy\ast.py", line 1832, in execute
-    if renpy.python.py_eval(condition):
-  File "C:\Users\ofir2\OneDrive - The Interdisciplinary Center Herzliya IDC\IDC\3rd Semester\InGame\renpy-7.3.5-sdk\renpy\python.py", line 2059, in py_eval
-    return py_eval_bytecode(code, globals, locals)
-  File "C:\Users\ofir2\OneDrive - The Interdisciplinary Center Herzliya IDC\IDC\3rd Semester\InGame\renpy-7.3.5-sdk\renpy\python.py", line 2052, in py_eval_bytecode
-    return eval(bytecode, globals, locals)
-  File "game/cell.rpy", line 94, in <module>
-    if moneyInt >= 4500 or moenyInt <= 5500:
-NameError: name 'moenyInt' is not defined
+  File "game/cell.rpy", line 109, in script
+    jump secuirtyRoom
+  File "C:\Users\ofir2\OneDrive - The Interdisciplinary Center Herzliya IDC\IDC\3rd Semester\InGame\renpy-7.3.5-sdk\renpy\ast.py", line 1697, in execute
+    rv = renpy.game.script.lookup(target)
+  File "C:\Users\ofir2\OneDrive - The Interdisciplinary Center Herzliya IDC\IDC\3rd Semester\InGame\renpy-7.3.5-sdk\renpy\script.py", line 898, in lookup
+    raise ScriptError("could not find label '%s'." % str(original))
+ScriptError: could not find label 'secuirtyRoom'.
 
 Windows-8-6.2.9200
 Ren'Py 7.3.5.606
 TextGame 1.0
-Sun Nov 15 16:42:15 2020
+Sun Nov 15 17:47:58 2020
