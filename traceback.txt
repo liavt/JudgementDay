@@ -1,22 +1,46 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/cell.rpy", line 109, in script
-    jump secuirtyRoom
-ScriptError: could not find label 'secuirtyRoom'.
+  File "game/lawyer.rpy", line 39, in script
+    call screen restaurant
+  File "renpy/common/000statements.rpy", line 531, in execute_call_screen
+    store._return = renpy.call_screen(name, *args, **kwargs)
+TypeError: unbound method get_tooltip() must be called with Jump instance as first argument (got nothing instead)
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/cell.rpy", line 109, in script
-    jump secuirtyRoom
-  File "C:\Users\ofir2\OneDrive - The Interdisciplinary Center Herzliya IDC\IDC\3rd Semester\InGame\renpy-7.3.5-sdk\renpy\ast.py", line 1697, in execute
-    rv = renpy.game.script.lookup(target)
-  File "C:\Users\ofir2\OneDrive - The Interdisciplinary Center Herzliya IDC\IDC\3rd Semester\InGame\renpy-7.3.5-sdk\renpy\script.py", line 898, in lookup
-    raise ScriptError("could not find label '%s'." % str(original))
-ScriptError: could not find label 'secuirtyRoom'.
+  File "game/lawyer.rpy", line 39, in script
+    call screen restaurant
+  File "C:\Users\user\Downloads\renpy-7.3.5-sdk\renpy\ast.py", line 1949, in execute
+    self.call("execute")
+  File "C:\Users\user\Downloads\renpy-7.3.5-sdk\renpy\ast.py", line 1937, in call
+    return renpy.statements.call(method, parsed, *args, **kwargs)
+  File "C:\Users\user\Downloads\renpy-7.3.5-sdk\renpy\statements.py", line 277, in call
+    return method(parsed, *args, **kwargs)
+  File "renpy/common/000statements.rpy", line 531, in execute_call_screen
+    store._return = renpy.call_screen(name, *args, **kwargs)
+  File "C:\Users\user\Downloads\renpy-7.3.5-sdk\renpy\exports.py", line 2905, in call_screen
+    rv = renpy.ui.interact(mouse="screen", type="screen", roll_forward=roll_forward)
+  File "C:\Users\user\Downloads\renpy-7.3.5-sdk\renpy\ui.py", line 297, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "C:\Users\user\Downloads\renpy-7.3.5-sdk\renpy\display\core.py", line 2702, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, **kwargs)
+  File "C:\Users\user\Downloads\renpy-7.3.5-sdk\renpy\display\core.py", line 3515, in interact_core
+    rv = renpy.display.focus.mouse_handler(ev, x, y)
+  File "C:\Users\user\Downloads\renpy-7.3.5-sdk\renpy\display\focus.py", line 407, in mouse_handler
+    return change_focus(new_focus, default=default)
+  File "C:\Users\user\Downloads\renpy-7.3.5-sdk\renpy\display\focus.py", line 362, in change_focus
+    set_focused(current, newfocus.arg, newfocus.screen)
+  File "C:\Users\user\Downloads\renpy-7.3.5-sdk\renpy\display\focus.py", line 109, in set_focused
+    new_tooltip = widget._get_tooltip()
+  File "C:\Users\user\Downloads\renpy-7.3.5-sdk\renpy\display\behavior.py", line 749, in _get_tooltip
+    return get_tooltip(self.action)
+  File "C:\Users\user\Downloads\renpy-7.3.5-sdk\renpy\display\behavior.py", line 373, in get_tooltip
+    return func()
+TypeError: unbound method get_tooltip() must be called with Jump instance as first argument (got nothing instead)
 
 Windows-8-6.2.9200
 Ren'Py 7.3.5.606
 TextGame 1.0
-Sun Nov 15 17:47:58 2020
+Tue Nov 17 00:30:25 2020

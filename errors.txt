@@ -2,13 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/courthouse.rpy", line 175: end of line expected.
-    p "What a waste of time...":
-                               ^
-
-File "game/courthouse.rpy", line 177: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
-    "Maybe?"
-            ^
+File "game/lawyer.rpy", line 83: u'Hide' is not a keyword argument or valid child for the imagebutton statement.
+    Hide("leaveButton")
+        ^
 
 Ren'Py Version: Ren'Py 7.3.5.606
-Sun Nov 15 19:19:38 2020
+Tue Nov 17 00:36:13 2020
