@@ -41,13 +41,9 @@ label courtwhy:
             p "This is an interesting claim..."
             $ mentionedBrother = True
             jump courtalibi
-        "I didn't do it!":
-            jump courtalibi
         "I wasn't there!":
             jump courtalibi
         "Do what?":
-            jump courtwhynoanswer
-        "I plead the fifth?":
             jump courtwhynoanswer
         "I had debts I needed to pay.":
             p "To who?"
@@ -121,8 +117,6 @@ label courtwhere:
             p "Fairly classic excuse."
         "I don't really know...":
             jump courtwherefail
-        "I plead the fifth":
-            jump courtwherefail
     jump courtdna
 
 label courtwherefail:
@@ -136,9 +130,6 @@ label courtwherefail:
 label courtdna:
     p "We also found an almost perfect DNA match of the door handle of the restaurant. Do you have anything to say about this?"
     menu:
-        "I plead the fifth":
-            p "Another dodged question..."
-            jump courtdnafail
         "I have no clue to be honest":
             p "You seem to not have much to say."
             jump courtdnafail
@@ -211,9 +202,6 @@ label courtdnafail:
 
 label courtmoney:
     menu:
-        "I plead the fifth.":
-            p "I expected nothing worse of an answer."
-            $ guilty = True
         "I don't recall...":
             p "You must have some clear memory issues then."
             $ guilty = True

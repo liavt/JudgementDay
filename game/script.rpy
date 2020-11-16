@@ -6,6 +6,8 @@ default hasBeer = False
 default hasFingerprints = False
 default playersName = ""
 default talkedToLawyer = False
+# How many times time has looped
+default repeats = 0
 
 # Background images
 image cell = "bg prison cell"
@@ -35,5 +37,9 @@ define b = Character("Bartender")
 # The game starts here.
 
 label start:
+    $ hasWallet = False
+    $ hasBeer = False
+    $ hasFingerprints = False
+    $ talkedToLawyer = False
     jump cell
     return
