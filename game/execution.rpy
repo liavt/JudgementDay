@@ -6,7 +6,7 @@ define timeLoopEffect = MultipleTransition([
 ])
 
 label execution:
-    scene execution
+    scene execution with fade
     show y at left
     show l at right
     with dissolve

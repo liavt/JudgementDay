@@ -1,7 +1,7 @@
 default searchInput = ""
 
 label securityRoom:
-    scene securityRoom
+    scene securityRoom with fade
     pause(1)
     show y at left with dissolve
     show g at right with dissolve

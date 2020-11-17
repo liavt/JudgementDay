@@ -1,5 +1,5 @@
 label lawyer:
-    scene lawyerRoom
+    scene lawyerRoom with fade
     show l at right with dissolve
     l "What would you like to talk to me about, my client?"
     show y at left with dissolve

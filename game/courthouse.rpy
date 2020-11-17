@@ -7,7 +7,7 @@ default convincedAboutBrother = False
 # Courthouse code
 
 label court:
-    scene courthouse
+    scene courthouse with fade
     show j at right
     with dissolve
     j "Order, order!"
