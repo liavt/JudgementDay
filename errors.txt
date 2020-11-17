@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/lawyer.rpy", line 62: expected 'image_name_component' not found.
-    show
-        ^
+File "game/execution.rpy", line 30: end of line expected.
+    y "" + lastWords
+         ^
 
 Ren'Py Version: Ren'Py 7.3.5.606
-Tue Nov 17 17:42:12 2020
+Tue Nov 17 23:49:49 2020

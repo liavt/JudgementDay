@@ -103,7 +103,7 @@ label cell:
                 show c at right
                 c "Classic. Good luck"
                 jump guard
-            "Yes":
+            "YES":
                 if whyHere == 1:
                     hide y
                     show c at right
