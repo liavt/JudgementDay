@@ -133,3 +133,5 @@ game/cache
 game/saves
 errors.txt
 errors.txt
+*.rpyc
+log.txt
