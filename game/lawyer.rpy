@@ -25,6 +25,7 @@ label lawyer:
 
 label crimeSceneIntro:
     scene crimeScene with fade
+    play music "crime scene.mp3" fadein 1.0
     pause(1)
     show screen goGoDimSumModal with dissolve
     pause(3)
@@ -89,6 +90,7 @@ label leavePopUp:
             show y at left with dissolve
             show l at right with dissolve
             l "I hope you found what you were looking foor. let's go to the courthouse."
+            stop music fadeout 1.0
             jump court
         "Maybe I'm still missing something..":
             hide y

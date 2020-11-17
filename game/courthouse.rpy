@@ -8,6 +8,7 @@ default convincedAboutBrother = False
 
 label court:
     scene courthouse with fade
+    play music "courthouse.mp3" fadein 1.0
     show j at right
     with dissolve
     j "Order, order!"

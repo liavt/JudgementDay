@@ -6,6 +6,7 @@ default moneyInt = 0
 
 label cell:
     scene cell
+    play music "cell.mp3" fadein 1.0
     show y at left
     if repeats == 1:
         y "Huh, I didn't die?"
