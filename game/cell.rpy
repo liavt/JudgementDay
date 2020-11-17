@@ -60,7 +60,7 @@ label cell:
                 playersName = playersName.strip()
             hide y
             show c at right
-            c "so, [playersName], What do they think you did?"
+            c "What do they think you did?"
     # Reason for prison
     hide c
     show y at left
