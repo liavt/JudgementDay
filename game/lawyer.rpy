@@ -3,10 +3,10 @@ label lawyer:
     show l at right with dissolve
     l "What would you like to talk to me about, my client?"
     show y at left with dissolve
-    y "Sir, you are the best lawyer my money could offer. You got to help me with my situation."
-    l "Today your trial is taking place so there is not much we can do."
+    y "Sir, you are the best lawyer my money could afford. You got to help me with my situation."
+    l "Today your trial is taking place, so there is not much we can do."
     l "Let me ask you the simplest but most difficult question there is."
-    l "did you do it?"
+    l "Did you do it?"
     menu:
         "NO":
             l "I had a feeling. I don't offer it usually, but I offer you to visit the crime scene for one last time.
@@ -16,7 +16,7 @@ label lawyer:
         "YES":
             l "I had a feeling. we will try our best today."
             l "May God be with you."
-        "I don't know what you all talk about":
+        "I don't know what you're talking about":
             l "Great tactic. Do you also want to claim temporary insanity?"
     hide l
     show g at center with dissolve
