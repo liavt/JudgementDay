@@ -131,3 +131,5 @@ dmypy.json
 *.pyc
 game/cache
 game/saves
+errors.txt
+errors.txt

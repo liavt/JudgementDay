@@ -81,30 +81,6 @@ style frame:
 ## In-game screens
 ################################################################################
 
-default notebookText = ""
-
-screen notebook():
-    #ontop
-    zorder 1000
-    modal True
-    tag notebook
-    frame:
-        xpadding 10
-        ypadding 10
-        xalign 0.5
-        yalign 0.5
-        background Solid("#fff")
-        viewport:
-            mousewheel True
-            scrollbars "vertical"
-            pagekeys True
-            arrowkeys True
-            vbox:
-                text "Notebook" size 40 color "#000"
-                null height 20
-                text "[notebookText]" color "#000"
-                input color "#000"
-
 
 ## Say screen ##################################################################
 ##
@@ -279,7 +255,6 @@ screen quick_menu():
 
             # Disabled this since it ruins time loop
             # textbutton _("Back") action Rollback()
-            textbutton "Notebook" action Show("notebook")
             textbutton _("History") action ShowMenu('history')
             textbutton _("Skip") action Skip() alternate Skip(fast=True, confirm=True)
             textbutton _("Auto") action Preference("auto-forward", "toggle")
