@@ -1,43 +1,38 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-While processing the padding property of style nvl_window:
-  File "renpy/common/00start.rpy", line 82, in _init_language
-    renpy.change_language(language)
-  File "renpy/common/00stylepreferences.rpy", line 124, in _m1_00stylepreferences__change_language
-    __update()
-  File "renpy/common/00stylepreferences.rpy", line 96, in _m1_00stylepreferences__update
-    renpy.style.rebuild()
-TypeError: 'int' object has no attribute '__getitem__'
+While running game code:
+  File "renpy/common/00keymap.rpy", line 421, in script
+    python hide:
+  File "renpy/common/00keymap.rpy", line 421, in <module>
+    python hide:
+  File "renpy/common/00keymap.rpy", line 440, in _execute_python_hide
+    renpy.save("_reload-1", "reload save game")
+Exception: Could not pickle <module 'random' from 'C:\Users\user\Downloads\renpy-7.3.5-sdk\lib\pythonlib2.7\random.pyo'>. (perhaps store.random = <module 'random' from 'C:\Users\user\Downloads\renpy-7.3.5-sdk\lib\pythonlib2.7\random.pyo'>)
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "C:\Users\user\Downloads\renpy-7.3.5-sdk\renpy\bootstrap.py", line 316, in bootstrap
-    renpy.main.main()
-  File "C:\Users\user\Downloads\renpy-7.3.5-sdk\renpy\main.py", line 578, in main
-    run(restart)
-  File "C:\Users\user\Downloads\renpy-7.3.5-sdk\renpy\main.py", line 75, in run
-    renpy.translation.init_translation()
-  File "C:\Users\user\Downloads\renpy-7.3.5-sdk\renpy\translation\__init__.py", line 558, in init_translation
-    renpy.store._init_language()  # @UndefinedVariable
-  File "renpy/common/00start.rpy", line 82, in _init_language
-    renpy.change_language(language)
-  File "C:\Users\user\Downloads\renpy-7.3.5-sdk\renpy\translation\__init__.py", line 646, in change_language
-    i()
-  File "renpy/common/00stylepreferences.rpy", line 124, in _m1_00stylepreferences__change_language
-    __update()
-  File "renpy/common/00stylepreferences.rpy", line 96, in _m1_00stylepreferences__update
-    renpy.style.rebuild()
-  File "style.pyx", line 795, in renpy.style.rebuild
-  File "style.pyx", line 788, in renpy.style.build_styles
-  File "style.pyx", line 709, in renpy.style.build_style
-  File "style.pyx", line 706, in renpy.style.build_style
-  File "gen/style_functions.pyx", line 1617, in style_functions.padding_property
-  File "include/style_common.pxi", line 30, in style_functions.index_0
-    return v[0]
-TypeError: 'int' object has no attribute '__getitem__'
+  File "renpy/common/00keymap.rpy", line 421, in script
+    python hide:
+  File "C:\Users\user\Downloads\renpy-7.3.5-sdk\renpy\ast.py", line 914, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "C:\Users\user\Downloads\renpy-7.3.5-sdk\renpy\python.py", line 2028, in py_exec_bytecode
+    exec bytecode in globals, locals
+  File "renpy/common/00keymap.rpy", line 421, in <module>
+    python hide:
+  File "renpy/common/00keymap.rpy", line 440, in _execute_python_hide
+    renpy.save("_reload-1", "reload save game")
+  File "C:\Users\user\Downloads\renpy-7.3.5-sdk\renpy\loadsave.py", line 422, in save
+    six.reraise(t, e, tb)
+  File "C:\Users\user\Downloads\renpy-7.3.5-sdk\renpy\loadsave.py", line 405, in save
+    dump((roots, renpy.game.log), logf)
+  File "C:\Users\user\Downloads\renpy-7.3.5-sdk\renpy\loadsave.py", line 49, in dump
+    cPickle.dump(o, f, cPickle.HIGHEST_PROTOCOL)
+  File "C:\Users\user\Downloads\renpy-7.3.5-sdk\renpy\python.py", line 2122, in module_pickle
+    raise Exception("Could not pickle {!r}.".format(module))
+Exception: Could not pickle <module 'random' from 'C:\Users\user\Downloads\renpy-7.3.5-sdk\lib\pythonlib2.7\random.pyo'>. (perhaps store.random = <module 'random' from 'C:\Users\user\Downloads\renpy-7.3.5-sdk\lib\pythonlib2.7\random.pyo'>)
 
 Windows-8-6.2.9200
 Ren'Py 7.3.5.606
 TextGame 1.0
-Tue Nov 17 03:27:14 2020
+Tue Nov 17 18:26:02 2020

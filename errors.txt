@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/security_room.rpy", line 25: Line is indented, but the preceding action statement does not expect a block. Please check this line's indentation.
-    jump crimeScene
-    ^
+File "game/lawyer.rpy", line 62: expected 'image_name_component' not found.
+    show
+        ^
 
 Ren'Py Version: Ren'Py 7.3.5.606
-Tue Nov 17 01:52:47 2020
+Tue Nov 17 17:42:12 2020

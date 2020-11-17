@@ -24,7 +24,12 @@ label lawyer:
     jump court
 
 label crimeSceneIntro:
-    scene crimeScene
+    scene crimeScene with fade
+    pause(1)
+    show screen goGoDimSumModal with dissolve
+    pause(3)
+    hide screen goGoDimSumModal with dissolve
+    pause(1)
     show y at center
     y "So, I guess this is where this whole mess started."
     y "Let's search for some clues."
@@ -36,6 +41,7 @@ label crimeScene:
     show screen fortuneCookiesBowl
     show screen bottlesSensor
     show screen leaveButton
+    show screen bonsaiSensor
     call screen restaurant
 
 
@@ -54,17 +60,33 @@ label fingerprints:
     jump crimeScene
 
 label bottles:
-    show y at center
-    y "Someone drank those three bar liqueurs to the bottom."
-    y "It must have been the bartender"
+    # show y at center
+    y "Someone drank this pink liqueur down to the bottom. It must have been the bartender."
     $ hasBeer = True
     hide y
     jump crimeScene
 
+label fortune:
+    python:
+        list_of_fortunes = []
+        list_of_fortunes.append("It never pays to kick a skunk.")
+        list_of_fortunes.append("While you have this day, fill it with life. While you're in this moment, give it your own special meaning and purpose and joy.")
+        list_of_fortunes.append("The measure of time to your next goal is the measure of your discipline.")
+        list_of_fortunes.append("All troubles you have can pass away very quickly.")
+        list_of_fortunes.append("YOUR FAILURES WILL LEAD YOU TO YOUR SUCCESS.")
+        list_of_fortunes.append("Before the beginning of great brilliance, there must be chaos.")
+        list_of_fortunes.append("If you take a single step to your journey, you'll succeed; it's not best to fail.")
+        list_of_fortunes.append("Truth is an unpopular subject. Because it is unquestionably correct.")
+        list_of_fortunes.append("All the world may not love a lover but they will be watching him.")
+        list_of_fortunes.append("The human spirit is stronger than anything that can happen to it.")
+        fortune = renpy.random.choice(list_of_fortunes)
+    "{color=#f00}{b}{i}\"[fortune]\"{/i}{/b}{/color}"
+    jump crimeScene
+
 label leavePopUp:
-    show y at left
     menu:
         "Call the lawyer":
+            show y at left with dissolve
             show l at right with dissolve
             l "I hope you found what you were looking foor. let's go to the courthouse."
             jump court
@@ -82,7 +104,7 @@ screen leaveButton:
         ypos 0
         idle "leave button.png"
         hover "leave button hover.png"
-        action Hide("fingerPrintsSensor"), Hide("walletOnFloor"), Hide("fortuneCookiesBowl"), Hide("bottlesSensor"), Hide("leaveButton"), Jump("leavePopUp")
+        action Hide("fingerPrintsSensor"), Hide("walletOnFloor"), Hide("fortuneCookiesBowl"), Hide("bottlesSensor"), Hide("bonsaiSensor"), Hide("leaveButton"), Jump("leavePopUp")
 
 screen fingerPrintsSensor:
     zorder 0
@@ -104,7 +126,18 @@ screen bottlesSensor:
         yanchor 0.5
         idle "empty.png"
         hover "yellow.png"
-        action Jump("bottles")
+        action Show("bottlesModal")
+
+screen bonsaiSensor:
+    zorder 0
+    imagebutton:
+        xpos 663
+        ypos 503
+        xanchor 0.5
+        yanchor 0.5
+        idle "empty.png"
+        hover "yellow.png"
+        action Show("bonsaiModal")
 
 screen walletOnFloor:
     zorder 0
@@ -129,7 +162,16 @@ screen fortuneCookiesBowl:
         action Show("cookiePicked")
 
 
+## MODALS
 
+screen goGoDimSumModal:
+    modal True
+    imagebutton:
+        xpos 640
+        ypos 360
+        xanchor 0.5
+        yanchor 0.5
+        idle "go go dim sum modal.png"
 
 screen walletPicked:
     modal True
@@ -282,15 +324,15 @@ screen cookieOpened:
         idle "x button.png"
         hover "x button.png"
         action Hide("cookieOpened")
-    # open wallet sensoe
+    # cookie sensor
     imagebutton:
-        xpos 640
-        ypos 300
+        xpos 740
+        ypos 250
         xanchor 0.5
         yanchor 0.5
         idle "empty.png"
         hover "yellow.png"
-        action Hide("cookieOpened")
+        action Hide("cookieOpened"), Jump("fortune")
 
 
 screen fingerprints:
@@ -322,6 +364,57 @@ screen fingerprints:
         idle "empty.png"
         hover "yellow.png"
         action Hide("fingerprints"), Jump("fingerprints")
+
+screen bottlesModal:
+    modal True
+    on "hide" action Hide("displayTextScreen")
+    zorder 1
+    imagebutton:
+        xpos 640
+        ypos 360
+        xanchor 0.5
+        yanchor 0.5
+        idle "bottles modal.png"
+        hover "bottles modal.png"
+    # X button
+    imagebutton:
+        xpos 380
+        ypos 160
+        xanchor 0.5
+        yanchor 0.5
+        idle "x button.png"
+        hover "x button.png"
+        action Hide("bottlesModal")
+    # bottles sensor
+    imagebutton:
+        xpos 560
+        ypos 480
+        xanchor 0.5
+        yanchor 0.5
+        idle "empty.png"
+        hover "yellow.png"
+        action Hide("bottlesModal"), Jump("bottles")
+
+screen bonsaiModal:
+    modal True
+    on "hide" action Hide("displayTextScreen")
+    zorder 1
+    imagebutton:
+        xpos 640
+        ypos 360
+        xanchor 0.5
+        yanchor 0.5
+        idle "bonsai modal.png"
+        hover "bonsai modal.png"
+    # X button
+    imagebutton:
+        xpos 380
+        ypos 160
+        xanchor 0.5
+        yanchor 0.5
+        idle "x button.png"
+        hover "x button.png"
+        action Hide("bonsaiModal")
 
 screen displayTextScreen:
     zorder 100
