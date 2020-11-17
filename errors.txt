@@ -2,13 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/courthouse.rpy", line 175: end of line expected.
-    p "What a waste of time...":
-                               ^
-
-File "game/courthouse.rpy", line 177: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
-    "Maybe?"
-            ^
+File "game/security_room.rpy", line 25: Line is indented, but the preceding action statement does not expect a block. Please check this line's indentation.
+    jump crimeScene
+    ^
 
 Ren'Py Version: Ren'Py 7.3.5.606
-Sun Nov 15 19:19:38 2020
+Tue Nov 17 01:52:47 2020
