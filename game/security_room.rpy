@@ -32,8 +32,15 @@ label pc:
 
 label search:
     python:
+        accepted_strings = ["smith", "adam", "joshua", "106398772", "106398773"]
         searchInput = renpy.input("What is your input?")
-    if "smith" in searchInput.strip().lower():
+        searchInputLower = searchInput.strip().lower()
+        is_search_accepted = False
+        for acc_str in accepted_strings:
+            if acc_str in searchInputLower:
+                is_search_accepted = True
+                break
+    if is_search_accepted:
         hide screen pcHome
         show screen pcResults
     else:
