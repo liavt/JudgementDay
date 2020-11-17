@@ -2,6 +2,8 @@ default searchInput = ""
 
 label securityRoom:
     scene securityRoom with fade
+    stop music fadeout 1.0
+    play music "security room.mp3" fadein 1.0
     pause(1)
     show y at left with dissolve
     show g at right with dissolve
@@ -73,6 +75,7 @@ label leave:
     show g at right with dissolve
     g "It's time for your trial."
     g "No need to remind you not to say a single word about.. you know ..."
+    stop music fadeout 1.0
     jump court
 
 screen roomSensors:
