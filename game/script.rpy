@@ -6,6 +6,7 @@ default hasBeer = False
 default hasFingerprints = False
 default playersName = ""
 default talkedToLawyer = False
+
 # How many times time has looped
 default repeats = 0
 
@@ -46,3 +47,12 @@ label start:
     $ talkedToLawyer = False
     jump cell
     return
+
+# Charachters' details
+default yourName = "Adam Smith"
+default yourID = "106398772"
+default twinsName = "Joshua"
+default teinsID = "106398773"
+default restaurntName = "Go GO Dim Sum"
+default guardsName = "Mike"
+default prosecutorsName = "Mark"
