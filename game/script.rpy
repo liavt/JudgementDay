@@ -6,6 +6,7 @@ default hasBeer = False
 default hasFingerprints = False
 default playersName = ""
 default talkedToLawyer = False
+
 # How many times time has looped
 default repeats = 0
 
@@ -13,15 +14,12 @@ default repeats = 0
 image cell = "bg prison cell"
 image courthouse = "bg court house.jpg"
 image securityRoom = "bg security room.jpg"
-image crimeScene = "bg crime scene.jpg"
-image lawyerRoom = "bg lawyer.jpg"
-image execution = "bg execution.jpg"
 
 # character sprites
 image y = "sprite player.png"
 image c = "sprite cellmate.png"
 image g = "sprite guard.png"
-image l = "sprite lawyer.png"
+image l = "sprite lawyer small.png"
 image p = "sprite prosecutor.png"
 image j = "sprite judge.png"
 image b = "sprite bartender.png"
@@ -46,3 +44,12 @@ label start:
     $ talkedToLawyer = False
     jump cell
     return
+
+# Charachters' details
+default yourName = "Adam Smith"
+default yourID = "106398772"
+default twinsName = "Joshua"
+default teinsID = "106398773"
+default restaurntName = "Go GO Dim Sum"
+default guardsName = "Mike"
+default prosecutorsName = "Mark"

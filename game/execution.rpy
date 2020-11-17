@@ -8,7 +8,7 @@ define timeLoopEffect = MultipleTransition([
 label execution:
     scene execution
     show y at left
-    show l at right
+    #show l at right
     with dissolve
     if not talkedToLawyer:
         l "Hey man, I'm sorry for what happened."
@@ -16,7 +16,7 @@ label execution:
         l "I know it's too late... But it's the least I could tell you."
         l "After all, it's your right to see your lawyer before a trial. The guards can't stop you."
     l "Just... have a good life up there, okay?"
-    hide l with dissolve
+    #hide l
     "Your lawyer leaves."
     show g at right
     with dissolve

@@ -60,7 +60,7 @@ label cell:
                 playersName = playersName.strip()
             hide y
             show c at right
-            c "so, [playersName], What do they think you did?"
+            c "What do they think you did?"
     # Reason for prison
     hide c
     show y at left
@@ -131,7 +131,7 @@ label cell:
                                 hide c
                                 show y at left
                                 python:
-                                    moneyString = renpy.input("How much do you want to tell him?\n(between 0 to 10000)", allow="0123456789")
+                                    moneyString = renpy.input("How much do you want to tell him?\n(between 0$ to 10000$)", allow="0123456789")
                                     moneyString = moneyString.strip()
                                     try:
                                         moneyInt = int(moneyString)

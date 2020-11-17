@@ -1,43 +1,20 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-While processing the padding property of style nvl_window:
-  File "renpy/common/00start.rpy", line 82, in _init_language
-    renpy.change_language(language)
-  File "renpy/common/00stylepreferences.rpy", line 124, in _m1_00stylepreferences__change_language
-    __update()
-  File "renpy/common/00stylepreferences.rpy", line 96, in _m1_00stylepreferences__update
-    renpy.style.rebuild()
-TypeError: 'int' object has no attribute '__getitem__'
+While running game code:
+  File "game/cell.rpy", line 52, in script
+    menu:
+TypeError: list indices must be integers, not unicode
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "C:\Users\user\Downloads\renpy-7.3.5-sdk\renpy\bootstrap.py", line 316, in bootstrap
-    renpy.main.main()
-  File "C:\Users\user\Downloads\renpy-7.3.5-sdk\renpy\main.py", line 578, in main
-    run(restart)
-  File "C:\Users\user\Downloads\renpy-7.3.5-sdk\renpy\main.py", line 75, in run
-    renpy.translation.init_translation()
-  File "C:\Users\user\Downloads\renpy-7.3.5-sdk\renpy\translation\__init__.py", line 558, in init_translation
-    renpy.store._init_language()  # @UndefinedVariable
-  File "renpy/common/00start.rpy", line 82, in _init_language
-    renpy.change_language(language)
-  File "C:\Users\user\Downloads\renpy-7.3.5-sdk\renpy\translation\__init__.py", line 646, in change_language
-    i()
-  File "renpy/common/00stylepreferences.rpy", line 124, in _m1_00stylepreferences__change_language
-    __update()
-  File "renpy/common/00stylepreferences.rpy", line 96, in _m1_00stylepreferences__update
-    renpy.style.rebuild()
-  File "style.pyx", line 795, in renpy.style.rebuild
-  File "style.pyx", line 788, in renpy.style.build_styles
-  File "style.pyx", line 709, in renpy.style.build_style
-  File "style.pyx", line 706, in renpy.style.build_style
-  File "gen/style_functions.pyx", line 1617, in style_functions.padding_property
-  File "include/style_common.pxi", line 30, in style_functions.index_0
-    return v[0]
-TypeError: 'int' object has no attribute '__getitem__'
+  File "game/cell.rpy", line 52, in script
+    menu:
+  File "D:\Programs\Renpy SDK\renpy-7.3.5-sdk\renpy\ast.py", line 1631, in execute
+    next_node(self.items[choice][2][0])
+TypeError: list indices must be integers, not unicode
 
 Windows-8-6.2.9200
 Ren'Py 7.3.5.606
 TextGame 1.0
-Tue Nov 17 03:27:14 2020
+Mon Nov 16 16:50:36 2020
