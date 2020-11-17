@@ -68,7 +68,7 @@ label joshuaResult:
 label leave:
     hide screen roomSensors
     show y at left with dissolve
-    y "Officer Josh!"
+    y "Guard Mike!"
     y "I'm done."
     show g at right with dissolve
     g "It's time for your trial."
