@@ -47,6 +47,8 @@ label search:
         hide screen pcHome
         "Prisoner '[searchInput]' was not found on the system..."
         menu:
+            "What do you want to do next?"
+
             "Try another input":
                 show screen pcHome
                 jump search

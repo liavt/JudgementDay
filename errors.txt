@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/lawyer.rpy", line 27: end of line expected.
-    scene china with fade at Zoom((800, 600), (225, 150, 400, 300), (0, 0, 800, 600), 1.0)
-                          ^
+File "game/cell.rpy", line 9: expected statement.
+    QuickSave()
+               ^
 
 Ren'Py Version: Ren'Py 7.3.5.606
-Wed Nov 18 12:36:33 2020
+Wed Nov 18 12:13:59 2020

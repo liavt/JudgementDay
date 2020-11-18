@@ -6,6 +6,7 @@ default moneyInt = 0
 
 label cell:
     scene cell
+    #call QuickSave()
     play music "cell.mp3" fadein 1.0
     show y at left
     if repeats == 1:
@@ -51,6 +52,8 @@ label cell:
         c "Before you go full cuckoo, what's your name at least?"
         hide c
     menu:
+        "What is your name?"
+
         "I don't know my name, I don't know anything":
             hide y
             show c at right
@@ -61,11 +64,13 @@ label cell:
                 playersName = playersName.strip()
             hide y
             show c at right
-            c "so, [playersName], What do they think you did?"
+            c "So, [playersName], what do they think you did?"
     # Reason for prison
     hide c
     show y at left
     menu:
+        "What do they think you did?"
+
         "I don't know":
             hide y
             show c at right
@@ -99,12 +104,14 @@ label cell:
         hide c
         show y at left
         menu:
+            "Did you do it?"
+
             "No":
                 hide y
                 show c at right
                 c "Classic. Good luck"
                 jump guard
-            "YES":
+            "Yes":
                 if whyHere == 1:
                     hide y
                     show c at right
@@ -113,6 +120,8 @@ label cell:
                     show y at left
                     # Money loop
                     menu:
+                        "How much money did you steal?"
+
                         "More than you can think of":
                             hide y
                             show c at right

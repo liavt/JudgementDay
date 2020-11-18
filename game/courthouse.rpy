@@ -26,6 +26,8 @@ label court:
             y "My name is actually [playersName]."
         j "No, you must be mistaken. The docket says Adam Smith."
         j "If you have no more interruptions, let us continue with the trial."
+    else:
+        y "That's me alright."
     j "Representing the Restaurant Go Go Dim Sum, we have Prosecutor Mark. You may now begin your interrogation of the defendant."
     jump courtwhy
 
@@ -35,12 +37,22 @@ label courtwhy:
     with dissolve
     p "Hello, I will ask you some questions and you must answer nothing but the truth. Are you ready to begin?"
     menu:
+        "Are you ready to begin?"
+
         "Yes":
             p "Great, let's start with the first question."
         "No":
-            p "Well we don't have much time, so I will continue. Hopefully you can keep up."
+            p "Well we don't have much time, so too bad. I must continue. Hopefully you can keep up."
+        "I'm guilty alright, just skip the formalities!":
+            l "WHAT?"
+            "Your lawyer facepalms"
+            p "Huh, that's an easy confession. I guess that's it."
+            $ guilty = True
+            jump courtplea
     p "First, why did you do it?"
     menu:
+        "Why did you do it?"
+
         "My long lost twin brother did it, not me!":
             p "This is an interesting claim..."
             $ mentionedBrother = True
@@ -52,6 +64,8 @@ label courtwhy:
         "I had debts I needed to pay.":
             p "To who?"
             menu:
+                "Who are you in debt to?"
+
                 "The Mafia":
                     pass
                 "The Government":
@@ -71,6 +85,8 @@ label courtalibi:
     p "We have a witness testify that he saw you walk through the door around the time of the robbery."
     p "He is the bartender of the place, so he was behind the counter."
     menu:
+        "What do you say about the witness testimony?"
+
         "You have the wrong person!":
             jump courtalibifail
         "He made up the story!":
@@ -110,6 +126,8 @@ label courtwhynoanswer:
 label courtwhere:
     p "Where were you an hour before the robbery?"
     menu:
+        "Where were you an hour before the robbery?"
+
         "Preparing the escape vehicle":
             $ guilty = True
             p "Your honor, this aligns perfectly with the details of the robbery."
@@ -134,6 +152,8 @@ label courtwherefail:
 label courtdna:
     p "We also found an almost perfect DNA match of the door handle of the restaurant. Do you have anything to say about this?"
     menu:
+        "What do you have to say about the DNA test?"
+
         "I have no clue to be honest":
             p "You seem to not have much to say."
             jump courtdnafail
@@ -146,35 +166,41 @@ label courtdna:
             l "Why did you say that!"
             jump courtdnafail
         "I have evidence showing a mismatch of fingerprints" if hasFingerprints:
-            p "And how is that relevant?"
+            jump courtdnafingerprints
+
+label courtdnafingerprints:
+    p "And how is that relevant?"
+    menu:
+        "How are the fingerprints relevant?"
+
+        "Isn't really.":
+            p "Please stop wasting the time of the court..."
+            jump courtdnafail
+        "I don't know, I'm no scientist.":
+            p "Please stop wasting our time..."
+            jump courtdnafail
+        "The test must be wrong then.":
+            jump courtdnafaultytest
+        "Like I mentioned before, my long lost brother did the crime. Your DNA test simply picked up his DNA." if mentionedBrother:
+            p "A long lost brother? You are seriously claiming we have the wrong guy?"
             menu:
-                "Isn't really.":
-                    p "Please stop wasting the time of the court..."
+                "Seriously? A long lost brother?"
+
+                "Maybe?":
+                    p "What a waste of time..."
                     jump courtdnafail
-                "I don't know, I'm no scientist.":
-                    p "Please stop wasting our time..."
-                    jump courtdnafail
-                "The test must be wrong then.":
-                    jump courtdnafaultytest
-                "Like I mentioned before, my long lost brother did the crime. Your DNA test simply picked up his DNA." if mentionedBrother:
-                    p "A long lost brother? You are seriously claiming we have the wrong guy?"
-                    menu:
-                        "I plead the fifth.":
-                            p "What a waste of time..."
-                            jump courtdnafail
-                        "Maybe?":
-                            p "What a waste of time..."
-                            jump courtdnafail
-                        "I have heard more crazy things before.":
-                            jump courtdnabrother
-                        "Yes, and I can prove it.":
-                            jump courtdnabrother
-                        "That's exactly what I am saying! Aren't you listening?":
-                            jump courtdnabrother
+                "I have heard more crazy things before.":
+                    jump courtdnabrother
+                "Yes, and I can prove it.":
+                    jump courtdnabrother
+                "That's exactly what I am saying! Aren't you listening?":
+                    jump courtdnabrother
 
 label courtdnabrother:
     p "Well, do you have any proof of your 'long lost brother?'"
     menu:
+        "Do you have any proof of your long lost brother?"
+
         "None, just trust me bro.":
             p "Please be serious in the court."
             jump courtdnafail
@@ -189,12 +215,16 @@ label courtdnabrother:
 label courtdnafaultytest:
     p "Do you have any evidence that this test is faulty?"
     menu:
+        "Evidence that this test is faulty?"
+
         "No":
             p "Very well then."
         "Yes, because I know I'm innocent.":
             p "Classic defense. Everyone says that, you aren't special."
         "Yes, I know a guy who worked on it. He says it's fake news!":
             p "Nice try, but hearsay isn't valid evidence."
+        "Yes, I have some fingerprint tests from the crime scene which contradict the DNA" if hasFingerprints:
+            jump courtdnafingerprints
     jump courtdnafail
 
 label courtdnafail:
@@ -206,6 +236,8 @@ label courtdnafail:
 
 label courtmoney:
     menu:
+        "Where is the money?"
+
         "I don't recall...":
             p "You must have some clear memory issues then."
             $ guilty = True
@@ -215,9 +247,11 @@ label courtmoney:
         "I used it to pay off my debts.":
             l "Why did you say that?!"
             $ guilty = True
-        "I have my wallot to prove that I don't have the money":
+        "I have my wallet to prove that I don't have the money" if hasWallet:
             p "And how does that prove it exactly?"
             menu:
+                "How does the wallet prove anything?"
+
                 "No idea, it's your job to investigate, not mine.":
                     p "Please take this trial seriously, your life is on the line."
                     p "Since you are clearly joking, I must only assume you are guilty and trying to distract us."
@@ -228,6 +262,8 @@ label courtmoney:
                 "It fell out of my pocket when I was arrested. Thus, I had no money.":
                     p "So who has the money then, if not you?"
                     menu:
+                        "Who has the money then?"
+
                         "My twin brother":
                             if convincedAboutBrother:
                                 p "Huh, it checks out with your earlier evidence too... You have a good point."
@@ -255,6 +291,8 @@ label courtplea:
     p "I rest my case."
     j "So, what do you plead?"
     menu:
+        "What do you plead?"
+
         "Guilty":
             $ guilty = True
         "Not guilty":
