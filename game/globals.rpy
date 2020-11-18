@@ -28,6 +28,7 @@ image l = "sprite lawyer.png"
 image p = "sprite prosecutor.png"
 image j = "sprite judge.png"
 image b = "sprite bartender.png"
+image t = "sprite evil.png"
 
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
@@ -39,22 +40,22 @@ define l = Character("Lawyer")
 define p = Character("Prosecutor")
 define j = Character("Judge")
 define b = Character("Bartender")
+define t = Character("Joshua")
 
 # The game starts here.
-
 label start:
     $ hasWallet = False
     $ hasBeer = False
     $ hasFingerprints = False
     $ talkedToLawyer = False
-    jump cell
+    jump freedom
     return
 
 # Game details
-    default yourName = "Adam Smith"
-    default yourID = "106398772"
-    default twinsName = "Joshua"
-    default teinsID = "106398773"
-    default restaurntName = "Go GO Dim Sum"
-    default guardsName = "Mike"
-    default prosecutorsName = "Mark"
+default yourName = "Adam Smith"
+default yourID = "106398772"
+default twinsName = "Joshua"
+default teinsID = "106398773"
+default restaurntName = "Go GO Dim Sum"
+default guardsName = "Mike"
+default prosecutorsName = "Mark"
