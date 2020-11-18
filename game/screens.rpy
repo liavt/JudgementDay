@@ -627,7 +627,7 @@ screen load():
 
 screen file_slots(title):
 
-    default page_name_value = FilePageNameInputValue(pattern=_("Page {}"), auto=_("Automatic saves"), quick=_("Quick saves"))
+    default page_name_value = FilePageNameInputValue(pattern=_("Page {}"), quick=_("Quick saves"))
 
     use game_menu(title):
 
