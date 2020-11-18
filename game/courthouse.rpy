@@ -10,6 +10,9 @@ label court:
     scene courthouse
     show j at right
     with dissolve
+    $ guilty = False
+    $ mentionedBrother = False
+    $ convincedAboutBrother = False
     j "Order, order!"
     j "We will now begin case #2158673"
     j "Our defendant: Adam Smith"
@@ -22,7 +25,7 @@ label court:
             y "My name is actually [playersName]."
         j "No, you must be mistaken. The docket says Adam Smith."
         j "If you have no more interruptions, let us continue with the trial."
-    j "Representing the Restaurant _________, we have Prosecutor ______. You may now begin your interrogation of the defendant."
+    j "Representing the Restaurant Go Go Dim Sum, we have Prosecutor Mark. You may now begin your interrogation of the defendant."
     jump courtwhy
 
 label courtwhy:
