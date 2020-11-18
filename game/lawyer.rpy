@@ -24,6 +24,8 @@ label lawyer:
     jump court
 
 label crimeSceneIntro:
+    scene china with fade
+    pause(2)
     scene crimeScene with fade
     play music "crime scene.mp3" fadein 1.0
     pause(1)
