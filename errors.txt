@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/cell.rpy", line 9: expected statement.
-    QuickSave()
-               ^
+File "game/screens.rpy", line 266: u'while' is not a keyword argument or valid child for the vbox statement.
+    while i < len(notebookText):
+         ^
 
 Ren'Py Version: Ren'Py 7.3.5.606
-Wed Nov 18 12:13:59 2020
+Wed Nov 18 13:18:28 2020
