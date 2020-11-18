@@ -48,7 +48,7 @@ label start:
     $ hasBeer = False
     $ hasFingerprints = False
     $ talkedToLawyer = False
-    jump freedom
+    jump cell
     return
 
 # Game details
