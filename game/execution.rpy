@@ -6,9 +6,9 @@ define timeLoopEffect = MultipleTransition([
 ])
 
 label execution:
-    scene execution
+    scene execution with fade
     show y at left
-    #show l at right
+    show l at right
     with dissolve
     if not talkedToLawyer:
         l "Hey man, I'm sorry for what happened."
@@ -16,12 +16,22 @@ label execution:
         l "I know it's too late... But it's the least I could tell you."
         l "After all, it's your right to see your lawyer before a trial. The guards can't stop you."
     l "Just... have a good life up there, okay?"
-    #hide l
+    hide l with dissolve
     "Your lawyer leaves."
     show g at right
     with dissolve
     g "Your execution is in 10 minutes. Don't keep me waiting, I have some important... business.... to attend to."
-    g "Come on, empty your pockets."
+    g "Before we get to your execuition, as traditionaly happens, do you have any last words?"
+    menu:
+        "YES":
+            $ lastWords = ""
+            $ lastWords = renpy.input("Enter your last words:")
+            $ lastWords = lastWords.strip()
+            y "[lastWords]"
+            g "Oh, I'm so toched by your words, maybe I won't excute you today.\nHaha, just kidding, this is my favorite part of the day."
+            g "Come on now, empty your pockets."
+        "NO":
+            g "Your loss, maybe it would have change my mind ablut your execution. Oh well, Come on now, empty your pockets."
     if repeats == 0:
         "You rummage around in your right pocket, until you feel a small object presiding there."
         "You take out the object, which is revealed to be a fortune cookie."

@@ -1,20 +1,38 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/cell.rpy", line 52, in script
-    menu:
-TypeError: list indices must be integers, not unicode
+  File "renpy/common/00keymap.rpy", line 421, in script
+    python hide:
+  File "renpy/common/00keymap.rpy", line 421, in <module>
+    python hide:
+  File "renpy/common/00keymap.rpy", line 440, in _execute_python_hide
+    renpy.save("_reload-1", "reload save game")
+Exception: Could not pickle <module 'random' from 'C:\Users\user\Downloads\renpy-7.3.5-sdk\lib\pythonlib2.7\random.pyo'>. (perhaps store.random = <module 'random' from 'C:\Users\user\Downloads\renpy-7.3.5-sdk\lib\pythonlib2.7\random.pyo'>)
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/cell.rpy", line 52, in script
-    menu:
-  File "D:\Programs\Renpy SDK\renpy-7.3.5-sdk\renpy\ast.py", line 1631, in execute
-    next_node(self.items[choice][2][0])
-TypeError: list indices must be integers, not unicode
+  File "renpy/common/00keymap.rpy", line 421, in script
+    python hide:
+  File "C:\Users\user\Downloads\renpy-7.3.5-sdk\renpy\ast.py", line 914, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "C:\Users\user\Downloads\renpy-7.3.5-sdk\renpy\python.py", line 2028, in py_exec_bytecode
+    exec bytecode in globals, locals
+  File "renpy/common/00keymap.rpy", line 421, in <module>
+    python hide:
+  File "renpy/common/00keymap.rpy", line 440, in _execute_python_hide
+    renpy.save("_reload-1", "reload save game")
+  File "C:\Users\user\Downloads\renpy-7.3.5-sdk\renpy\loadsave.py", line 422, in save
+    six.reraise(t, e, tb)
+  File "C:\Users\user\Downloads\renpy-7.3.5-sdk\renpy\loadsave.py", line 405, in save
+    dump((roots, renpy.game.log), logf)
+  File "C:\Users\user\Downloads\renpy-7.3.5-sdk\renpy\loadsave.py", line 49, in dump
+    cPickle.dump(o, f, cPickle.HIGHEST_PROTOCOL)
+  File "C:\Users\user\Downloads\renpy-7.3.5-sdk\renpy\python.py", line 2122, in module_pickle
+    raise Exception("Could not pickle {!r}.".format(module))
+Exception: Could not pickle <module 'random' from 'C:\Users\user\Downloads\renpy-7.3.5-sdk\lib\pythonlib2.7\random.pyo'>. (perhaps store.random = <module 'random' from 'C:\Users\user\Downloads\renpy-7.3.5-sdk\lib\pythonlib2.7\random.pyo'>)
 
 Windows-8-6.2.9200
 Ren'Py 7.3.5.606
 TextGame 1.0
-Mon Nov 16 16:50:36 2020
+Tue Nov 17 18:26:02 2020

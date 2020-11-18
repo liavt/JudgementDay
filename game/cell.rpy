@@ -6,6 +6,7 @@ default moneyInt = 0
 
 label cell:
     scene cell
+    play music "cell.mp3" fadein 1.0
     show y at left
     if repeats == 1:
         y "Huh, I didn't die?"
@@ -60,7 +61,7 @@ label cell:
                 playersName = playersName.strip()
             hide y
             show c at right
-            c "What do they think you did?"
+            c "so, [playersName], What do they think you did?"
     # Reason for prison
     hide c
     show y at left
@@ -103,7 +104,7 @@ label cell:
                 show c at right
                 c "Classic. Good luck"
                 jump guard
-            "Yes":
+            "YES":
                 if whyHere == 1:
                     hide y
                     show c at right
