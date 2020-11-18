@@ -8,6 +8,8 @@ label lawyer:
     l "Let me ask you the simplest but most difficult question there is."
     l "Did you do it?"
     menu:
+        "Did you do it?"
+
         "NO":
             l "I had a feeling. I don't offer it usually, but I offer you to visit the crime scene for one last time.
             maybe you'll figure something out."
@@ -86,6 +88,8 @@ label fortune:
 
 label leavePopUp:
     menu:
+        "What do you want to do?"
+
         "Call the lawyer":
             show y at left with dissolve
             show l at right with dissolve

@@ -11,6 +11,8 @@ label guard:
     hide g
     show y at left
     menu:
+        "It's time for your trial."
+
         "OK, fine......":
             hide y
             show g at right
@@ -45,6 +47,8 @@ label guard:
             hide g
             show y at left
             menu:
+                "What are you talking about?"
+
                 "I know you have an affair with __________":
                     $ guardAccusation = "I know you have an affair with __________"
                 "I know you stole the falafel from __________":
@@ -82,6 +86,8 @@ label guard:
             hide g
             show y at left
             menu:
+                "You don't deserve a lawyer."
+
                 "OK, fine......":
                     hide y
                     show g at right

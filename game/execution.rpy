@@ -7,6 +7,7 @@ define timeLoopEffect = MultipleTransition([
 
 label execution:
     scene execution with fade
+    play music "execution.mp3" fadein 2.0
     show y at left
     show l at right
     with dissolve
@@ -23,12 +24,16 @@ label execution:
     g "Your execution is in 10 minutes. Don't keep me waiting, I have some important... business.... to attend to."
     g "Before we get to your execuition, as traditionaly happens, do you have any last words?"
     menu:
+        "Any last words?"
+
         "YES":
             $ lastWords = ""
             $ lastWords = renpy.input("Enter your last words:")
             $ lastWords = lastWords.strip()
             y "[lastWords]"
-            g "Oh, I'm so toched by your words, maybe I won't excute you today.\nHaha, just kidding, this is my favorite part of the day."
+            g "Oh, I'm so touched by your words, maybe I won't excute you today."
+            $ renpy.pause(1.5)
+            g "...haha, just kidding, this is my favorite part of the day."
             g "Come on now, empty your pockets."
         "NO":
             g "Your loss, maybe it would have change my mind ablut your execution. Oh well, Come on now, empty your pockets."
