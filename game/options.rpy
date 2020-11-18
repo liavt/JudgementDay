@@ -157,6 +157,12 @@ define config.window_icon = "gui/window_icon.png"
 ## This section controls how Ren'Py turns your project into distribution files.
 
 init python:
+    config.has_autosave = False
+    config.has_quicksave = False
+    config.autosave_on_quit = False
+    config.autosave_on_choice = False
+
+    _game_menu_screen = "preferences"
 
     ## The following functions take file patterns. File patterns are case-
     ## insensitive, and matched against the path relative to the base directory,

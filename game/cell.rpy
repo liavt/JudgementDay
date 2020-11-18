@@ -6,9 +6,13 @@ default moneyInt = 0
 
 label cell:
     scene cell
-    #call QuickSave()
+    $ renpy.block_rollback()
     play music "cell.mp3" fadein 1.0
     show y at left
+
+    if repeats > 0:
+        $ renpy.save(renpy.newest_slot(), "Loop #[repeats]")
+
     if repeats == 1:
         y "Huh, I didn't die?"
         y "What the...."

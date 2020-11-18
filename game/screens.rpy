@@ -234,6 +234,28 @@ style choice_button is default:
 style choice_button_text is default:
     properties gui.button_text_properties("choice_button")
 
+default notebookText = "Write text here"
+
+screen notebook():
+    zorder 1000
+    tag notebook
+    modal True
+    frame:
+        xysize (500, 500)
+        xalign 0.5
+        yalign 0.5
+        background Solid("#ddd")
+
+        textbutton "X" text_size 20 action Hide("notebook") xalign 1.0 yalign 0 xoffset 3 yoffset 3
+
+        vbox:
+            text "Notebook" size 48
+            null height 20
+            viewport:
+                mousewheel True
+                # Renpy has no multiline input, so this is dumb but it works
+                input value VariableInputValue("notebookText") copypaste True xmaximum 10000000
+
 
 ## Quick Menu screen ###########################################################
 ##
@@ -255,6 +277,7 @@ screen quick_menu():
 
             # Disabled this since it ruins time loop
             # textbutton _("Back") action Rollback()
+            textbutton _("Notebook") action Show('notebook')
             textbutton _("History") action ShowMenu('history')
             textbutton _("Skip") action Skip() alternate Skip(fast=True, confirm=True)
             #textbutton _("Auto") action Preference("auto-forward", "toggle")
@@ -604,7 +627,7 @@ screen load():
 
 screen file_slots(title):
 
-    default page_name_value = FilePageNameInputValue(pattern=_("Page {}"), auto=_("Automatic saves"), quick=_("Quick saves"))
+    default page_name_value = FilePageNameInputValue(pattern=_("Page {}"), quick=_("Quick saves"))
 
     use game_menu(title):
 

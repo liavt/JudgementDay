@@ -62,9 +62,22 @@ label execution:
         y "At least I have another chance at my freedom."
         y "I think I have a better plan on what to do next time, let's see if it works out."
         y "Here we go..."
+    hide g with dissolve
     "You crack open the cookie, revealing a thinly cut white paper, with a single fortune on it:"
-    "'Failure is the chance to do better next time.'"
+    show screen fortune with dissolve
+    pause (1)
+    "{color=#f00}{b}{i}'Failure is the chance to do better next time.'{/i}{/b}{/color}"
     $ repeats = repeats + 1
+    hide screen fortune with dissolve
     scene cell
     with timeLoopEffect
     jump start
+
+screen fortune:
+    # modal True
+    imagebutton:
+        xpos 900
+        ypos 360
+        xanchor 0.5
+        yanchor 0.5
+        idle "fortune.png"
