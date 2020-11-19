@@ -131,7 +131,7 @@ screen fingerPrintsSensor:
         yanchor 0.5
         idle "empty.png"
         hover "yellow.png"
-        action Show("fingerprints")
+        action Play("sound", "pickup.wav"), Show("fingerprints")
 
 screen bottlesSensor:
     zorder 0
@@ -142,7 +142,7 @@ screen bottlesSensor:
         yanchor 0.5
         idle "empty.png"
         hover "yellow.png"
-        action Show("bottlesModal")
+        action Play("sound", "pickup.wav"), Show("bottlesModal")
 
 screen bonsaiSensor:
     zorder 0
@@ -153,7 +153,7 @@ screen bonsaiSensor:
         yanchor 0.5
         idle "empty.png"
         hover "yellow.png"
-        action Show("bonsaiModal")
+        action Play("sound", "pickup.wav"), Show("bonsaiModal")
 
 screen walletOnFloor:
     zorder 0
@@ -164,7 +164,7 @@ screen walletOnFloor:
         yanchor 0.5
         idle "wallet on floor.png"
         hover "wallet yellow.png"
-        action Show("walletPicked"), Hide("walletOnFloor")
+        action Play("sound", "pickup.wav"), Show("walletPicked"), Hide("walletOnFloor")
 
 screen fortuneCookiesBowl:
     zorder 0
@@ -175,7 +175,7 @@ screen fortuneCookiesBowl:
         yanchor 0.5
         idle "fortune cookies bowl small.png"
         hover "fortune cookies bowl small yellow.png"
-        action Show("cookiePicked")
+        action Play("sound", "pickup.wav"), Show("cookiePicked")
 
 
 ## MODALS
@@ -318,7 +318,7 @@ screen cookiePicked:
         yanchor 0.5
         idle "empty.png"
         hover "yellow.png"
-        action Hide("cookiePicked"), Show("cookieOpened")
+        action  Play("sound", "cookie_open.wav"), Hide("cookiePicked"), Show("cookieOpened")
 
 screen cookieOpened:
     modal True
