@@ -9,6 +9,7 @@ label cell:
     $ renpy.block_rollback()
     play music "cell.mp3" fadein 1.0
     show y at left
+    with dissolve
 
     if repeats > 0:
         $ renpy.save(renpy.newest_slot(), "Loop #[repeats]")
@@ -56,7 +57,7 @@ label cell:
         c "Before you go full cuckoo, what's your name at least?"
         hide c
     menu:
-        "What is your name?"
+        c "What is your name?"
 
         "I don't know my name, I don't know anything":
             hide y
@@ -73,7 +74,7 @@ label cell:
     hide c
     show y at left
     menu:
-        "What do they think you did?"
+        c "What do they think you did?"
 
         "I don't know":
             hide y
@@ -108,7 +109,7 @@ label cell:
         hide c
         show y at left
         menu:
-            "Did you do it?"
+            c "Did you do it?"
 
             "No":
                 hide y
@@ -119,12 +120,10 @@ label cell:
                 if whyHere == 1:
                     hide y
                     show c at right
-                    c "How much?"
-                    hide c
                     show y at left
                     # Money loop
                     menu:
-                        "How much money did you steal?"
+                        c "How much?"
 
                         "More than you can think of":
                             hide y

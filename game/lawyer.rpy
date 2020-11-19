@@ -6,9 +6,8 @@ label lawyer:
     y "Sir, you are the best lawyer my money could afford. You got to help me with my situation."
     l "Today your trial is taking place, so there is not much we can do."
     l "Let me ask you the simplest but most difficult question there is."
-    l "Did you do it?"
     menu:
-        "Did you do it?"
+        l "Did you do it?"
 
         "NO":
             l "I had a feeling. I don't offer it usually, but I offer you to visit the crime scene for one last time.
@@ -90,13 +89,18 @@ label fortune:
 
 label leavePopUp:
     menu:
-        "What do you want to do?"
+        y "What do I want to do?"
 
         "Call the lawyer":
             show y at left with dissolve
+            y "I think I'm done looking for evidence."
             show l at right with dissolve
-            l "I hope you found what you were looking foor. let's go to the courthouse."
+            l "I hope you found what you were looking foor. Let's go to the courthouse."
+            l "Just so you know, if you see {color=#34bdeb}blue text{/color}, that means you can use evidence that you found."
+            l "Let's hope you have a good case."
             stop music fadeout 1.0
+            hide y
+            hide l
             jump court
         "Maybe I'm still missing something..":
             hide y

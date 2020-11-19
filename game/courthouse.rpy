@@ -18,6 +18,8 @@ label court:
     j "We will now begin case #2158673"
     j "Our defendant: [yourName]"
     j "ID number: #[yourID]"
+    show y at left
+    with dissolve
     if playersName.lower() != yourName.lower():
         y "That's not my name!"
         "The judge looks confused"
@@ -28,31 +30,39 @@ label court:
         j "No, you must be mistaken. The docket says [yourName]."
         j "If you have no more interruptions, let us continue with the trial."
     else:
-        y "That's me alright."
-    j "Representing the Restaurant [restaurntName], we have Prosecutor [prosecutorsName]. You may now begin your interrogation of the defendant."
+        y "That's my name? I don't remember being called [yourName]..."
+    hide y
+    with dissolve
+    show p
+    with dissolve
+    j "Representing the Restaurant [restaurntName], we have Prosecutor [prosecutorsName]."
+    j "You may now begin your interrogation of the defendant."
     jump courtwhy
 
 label courtwhy:
     hide j
+    with dissolve
     show p
     with dissolve
-    p "Hello, I will ask you some questions and you must answer nothing but the truth. Are you ready to begin?"
     menu:
-        "Are you ready to begin?"
+        p "Hello, I will ask you some questions and you must answer nothing but the truth. Are you ready to begin?"
 
         "Yes":
             p "Great, let's start with the first question."
         "No":
             p "Well we don't have much time, so too bad. I must continue. Hopefully you can keep up."
         "I'm guilty alright, just skip the formalities!":
+            show l at right
+            with dissolve
             l "WHAT?"
             "Your lawyer facepalms"
             p "Huh, that's an easy confession. I guess that's it."
             $ guilty = True
+            hide l
+            with dissolve
             jump courtplea
-    p "First, why did you do it?"
     menu:
-        "Why did you do it?"
+        p "First, why did you do it?"
 
         "My long lost twin brother did it, not me!":
             p "This is an interesting claim..."
@@ -63,9 +73,8 @@ label courtwhy:
         "Do what?":
             jump courtwhynoanswer
         "I had debts I needed to pay.":
-            p "To who?"
             menu:
-                "Who are you in debt to?"
+                p "To who?"
 
                 "The Mafia":
                     pass
@@ -86,7 +95,7 @@ label courtalibi:
     p "We have a witness testify that he saw you walk through the door around the time of the robbery."
     p "He is the bartender of the place, so he was behind the counter."
     menu:
-        "What do you say about the witness testimony?"
+        p "Do you have anything to say about the witness testimony?"
 
         "You have the wrong person!":
             jump courtalibifail
@@ -94,18 +103,28 @@ label courtalibi:
             jump courtalibifail
         "I simply wasn't there!":
             jump courtalibifail
-        "He was drunk and confused me for someone else!":
-            if hasBeer:
-                l "Your honor, if we may raise some evidence to the claim the witness is making..."
-                l "We found this beer bottle at the crime scene, behind the bartender's counter."
-                b "Actually, now that you remind me, I did feel a bit hungover the night after..."
-                l "Yes, clearly this settles the situation. The witness simply confused the defendant for someone who looked similar."
-                p "But who would look so similar as to be confused by the witness?"
-                l "We can get to that later. Right now, your honor, I request that we throw out this witness testimony as it's clearly not credible."
-                j "Objection sustained. The testimony is no longer credible evidence. Prosecutor, continue with your next question."
-                jump courtwhere
-            else:
-                jump courtalibifail
+
+        "He was drunk and confused me for someone else!" if not hasBeer:
+            jump courtalibifail
+        "{color=#34bdeb}He was drunk and confused me for someone else!{/color}" if hasBeer:
+            show l at right
+            with dissolve
+            l "Your honor, if we may raise some evidence to the claim the witness is making..."
+            l "We found this beer bottle at the crime scene, behind the bartender's counter."
+            b "Actually, now that you remind me, I did feel a bit hungover the night after..."
+            l "Yes, clearly this settles the situation. The witness simply confused the defendant for someone who looked similar."
+            p "But who would look so similar as to be confused by the witness?"
+            l "We can get to that later. Right now, your honor, I request that we throw out this witness testimony as it's clearly not credible."
+            hide b
+            show j at left
+            with dissolve
+            j "Objection sustained. The testimony is no longer credible evidence. Prosecutor, continue with your next question."
+            hide j
+            with dissolve
+            hide l
+            with dissolve
+            p "Hpmh."
+            jump courtwhere
 
 label courtalibifail:
     p "Not a very strong alibi, I have to be honest."
@@ -119,15 +138,24 @@ label courtwhynoanswer:
     p "Don't play dumb, we have a witness testifying they saw you."
     show b at left
     with dissolve
+    show l at right
+    with dissolve
     l "Your honor, my defendant does not have to answer a question if they don't want to."
+    show j at left
+    with dissolve
     j "Correct. Prosecutor, continue to your next question."
+    hide l
+    with dissolve
+    hide j
+    with dissolve
     $ guilty = True
     jump courtwhere
 
 label courtwhere:
-    p "Where were you an hour before the robbery?"
+    hide b
+    with dissolve
     menu:
-        "Where were you an hour before the robbery?"
+        p "Where were you an hour before the robbery?"
 
         "Preparing the escape vehicle":
             $ guilty = True
@@ -146,14 +174,21 @@ label courtwherefail:
     $ guilty = True
     p "What will you tell me then? Classic guilty defendant, dodging every question."
     "The prosecutor looks annoyed."
+    show l at right
+    with dissolve
     l "Your honor, it is within my client's rights."
+    show j at left
+    with dissolve
     j "Correct, if the defendant refuses to answer a question, then you must move on to the next question."
     p "Fine."
+    hide l
+    with dissolve
+    hide j
+    with dissolve
 
 label courtdna:
-    p "We also found an almost perfect DNA match of the door handle of the restaurant. Do you have anything to say about this?"
     menu:
-        "What do you have to say about the DNA test?"
+        p "We also found an almost perfect DNA match of the door handle of the restaurant. Do you have anything to say about this?"
 
         "I have no clue to be honest":
             p "You seem to not have much to say."
@@ -164,15 +199,17 @@ label courtdna:
             p "Which lines up with the results of the DNA test."
             jump courtdnafail
         "I did the crime, so yes that makes sense.":
+            show l at right
             l "Why did you say that!"
+            hide l
+            with dissolve
             jump courtdnafail
-        "I have evidence showing a mismatch of fingerprints" if hasFingerprints:
+        "{color=#34bdeb}I have evidence showing a mismatch of fingerprints{/color}" if hasFingerprints:
             jump courtdnafingerprints
 
 label courtdnafingerprints:
-    p "And how is that relevant?"
     menu:
-        "How are the fingerprints relevant?"
+        p "And how is that relevant?"
 
         "Isn't really.":
             p "Please stop wasting the time of the court..."
@@ -182,7 +219,7 @@ label courtdnafingerprints:
             jump courtdnafail
         "The test must be wrong then.":
             jump courtdnafaultytest
-        "Like I mentioned before, my long lost brother did the crime. Your DNA test simply picked up his DNA." if mentionedBrother:
+        "{color=#34bdeb}Like I mentioned before, my long lost brother did the crime. Your DNA test simply picked up his DNA.{/color}" if mentionedBrother:
             p "A long lost brother? You are seriously claiming we have the wrong guy?"
             menu:
                 "Seriously? A long lost brother?"
@@ -200,9 +237,8 @@ label courtdnafingerprints:
 default brotherIDNumber = ""
 
 label courtdnabrother:
-    p "Well, do you have any proof of your 'long lost brother?'"
     menu:
-        "Do you have any proof of your long lost brother?"
+        p "Well, do you have any proof of your 'long lost brother?'"
 
         "None, just trust me bro.":
             p "Please be serious in the court."
@@ -214,26 +250,36 @@ label courtdnabrother:
             python:
                 brotherIDNumber = renpy.input("What is your brother's ID number?", allow="0123456789")
                 brotherIDNumber = brotherIDNumber.strip()
+            show j at left
+            with dissolve
             j "I'm checking the system right now..."
             if brotherIDNumber == teinsID:
                 j "It checks out."
                 j "There is an entry in the system for [twinsName] Smith..."
                 j "His ID number is [teinsID] while our defendant's ID number is..."
                 j "Oh wow, that's peculiar. It's one below: [yourID]"
+                show l at right
+                with dissolve
                 l "Your honor, it all checks out. You must have gotten the wrong person."
+                j "Makes sense to me. Prosecutor, continue on."
+                hide j
+                with dissolve
+                hide l
+                with dissolve
                 p "Well, what happened to the money then? Do you have proof that you don't have it?"
                 $ convincedAboutBrother = True
                 jump courtmoney
             else:
                 j "That ID number doesn't belong to anyone with the last name Smith..."
+                hide j
+                with dissolve
                 p "It's settled, the defendant is clearly making something up."
                 jump courtdnafail
 
 
 label courtdnafaultytest:
-    p "Do you have any evidence that this test is faulty?"
     menu:
-        "Evidence that this test is faulty?"
+        p "Do you have any evidence that this test is faulty?"
 
         "No":
             p "Very well then."
@@ -241,7 +287,7 @@ label courtdnafaultytest:
             p "Classic defense. Everyone says that, you aren't special."
         "Yes, I know a guy who worked on it. He says it's fake news!":
             p "Nice try, but hearsay isn't valid evidence."
-        "Yes, I have some fingerprint tests from the crime scene which contradict the DNA" if hasFingerprints:
+        "{color=#34bdeb}Yes, I have some fingerprint tests from the crime scene which contradict the DNA{/color}" if hasFingerprints:
             jump courtdnafingerprints
     jump courtdnafail
 
@@ -254,7 +300,7 @@ label courtdnafail:
 
 label courtmoney:
     menu:
-        "Where is the money?"
+        p "Where is the money?"
 
         "I don't recall...":
             p "You must have some clear memory issues then."
@@ -265,10 +311,9 @@ label courtmoney:
         "I used it to pay off my debts.":
             l "Why did you say that?!"
             $ guilty = True
-        "I have my wallet to prove that I don't have the money" if hasWallet:
-            p "And how does that prove it exactly?"
+        "{color=#34bdeb}I have my wallet to prove that I don't have the money{/color}" if hasWallet:
             menu:
-                "How does the wallet prove anything?"
+                p "And how does that prove it exactly?"
 
                 "No idea, it's your job to investigate, not mine.":
                     p "Please take this trial seriously, your life is on the line."
@@ -278,21 +323,23 @@ label courtmoney:
                     p "Doesn't mean that it's okay to steal."
                     $ guilty = True
                 "It fell out of my pocket when I was arrested. Thus, I had no money.":
-                    p "So who has the money then, if not you?"
                     menu:
-                        "Who has the money then?"
+                        p "So who has the money then, if not you?"
 
-                        "My twin brother":
-                            if convincedAboutBrother:
-                                p "Huh, it checks out with your earlier evidence too... You have a good point."
-                                if guilty:
-                                    p "But there is still other evidence outstanding that you have failed to mention."
-                                else:
-                                    l "Correct, all the evidence points to my defendant being the wrong person."
-                                    p "I guess I can see that..."
+                        "{color=#34bdeb}My twin brother{/color}" if convincedAboutBrother:
+                            p "Huh, it checks out with your earlier evidence too... You have a good point."
+                            if guilty:
+                                p "But there is still other evidence outstanding that you have failed to mention."
                             else:
-                                p "What an outlandish idea. With no proof, I can't take you seriously."
-                                $ guilty = True
+                                show l at right
+                                with dissolve
+                                l "Correct, all the evidence points to my defendant being the wrong person."
+                                p "I guess I can see that..."
+                                hide l
+                                with dissolve
+                        "My twin brother" if not convincedAboutBrother:
+                            p "What an outlandish idea. With no proof, I can't take you seriously."
+                            $ guilty = True
                         "The Mafia":
                             p "Funny joke. Please don't be a comedian during your final hours."
                             $ guilty = True
@@ -307,9 +354,12 @@ label courtmoney:
 label courtplea:
     p "Your honor, that ends my interrogation."
     p "I rest my case."
-    j "So, what do you plead?"
+    hide p
+    with dissolve
+    show j
+    with dissolve
     menu:
-        "What do you plead?"
+        j "So, what do you plead?"
 
         "Guilty":
             $ guilty = True
@@ -327,6 +377,8 @@ label courtplea:
         j "He will be appearing before the court shortly."
         j "I apologize for wasting your time, I hope it didn't take too long."
     j "This court is adjourned."
+    hide j
+    with dissolve
     if guilty:
         jump execution
     else:
