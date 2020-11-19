@@ -100,7 +100,7 @@ label leavePopUp:
             y "I think I'm done looking for evidence."
             show l at right with dissolve
             l "I hope you found what you were looking foor. Let's go to the courthouse."
-            l "Just so you know, if you see {color=#34bdeb}blue text{/color}, that means you can use evidence that you found."
+            "Tip: {color=#34bdeb}blue text{/color} indicates an answer choice that has been changed because of an action you took."
             l "Let's hope you have a good case."
             stop music fadeout 1.0
             hide y
