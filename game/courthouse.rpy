@@ -197,6 +197,8 @@ label courtdnafingerprints:
                 "That's exactly what I am saying! Aren't you listening?":
                     jump courtdnabrother
 
+default brotherIDNumber = ""
+
 label courtdnabrother:
     p "Well, do you have any proof of your 'long lost brother?'"
     menu:
@@ -209,9 +211,24 @@ label courtdnabrother:
             p "Not really..."
             jump courtdnafail
         "I have his ID number, you can check the database!":
-        # TODO put brother id number
-            p "Well, what happened to the money then? Do you have proof that your brother has it?"
-            jump courtmoney
+            python:
+                brotherIDNumber = renpy.input("What is your brother's ID number?", allow="0123456789")
+                brotherIDNumber = brotherIDNumber.strip()
+            j "I'm checking the system right now..."
+            if brotherIDNumber == teinsID:
+                j "It checks out."
+                j "There is an entry in the system for [twinsName] Smith..."
+                j "His ID number is [teinsID] while our defendant's ID number is..."
+                j "Oh wow, that's peculiar. It's one below: [yourID]"
+                l "Your honor, it all checks out. You must have gotten the wrong person."
+                p "Well, what happened to the money then? Do you have proof that you don't have it?"
+                $ convincedAboutBrother = True
+                jump courtmoney
+            else:
+                j "That ID number doesn't belong to anyone with the last name Smith..."
+                p "It's settled, the defendant is clearly making something up."
+                jump courtdnafail
+
 
 label courtdnafaultytest:
     p "Do you have any evidence that this test is faulty?"
@@ -313,4 +330,4 @@ label courtplea:
     if guilty:
         jump execution
     else:
-        "You win!!!!"
+        jump freedom
