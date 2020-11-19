@@ -4,24 +4,28 @@ label lawyer:
     l "What would you like to talk to me about, my client?"
     show y at left with dissolve
     y "Sir, you are the best lawyer my money could afford. You got to help me with my situation."
-    l "Today your trial is taking place, so there is not much we can do."
-    l "Let me ask you the simplest but most difficult question there is."
+    l "Your trial is taking place soon, so there is not much we can do."
+    l "Let me ask you the simplest but most difficult question there is, and I need you to answer as honestly as possible."
     menu:
         l "Did you do it?"
 
         "NO":
-            l "I had a feeling. I don't offer it usually, but I offer you to visit the crime scene for one last time.
-            maybe you'll figure something out."
+            l "I had a feeling. I don't offer it usually, but I offer you to visit the crime scene for one last time."
+            l "Maybe you'll figure something out."
             y "Thank you sir, it means a lot to me."
             jump crimeSceneIntro
         "YES":
-            l "I had a feeling. we will try our best today."
+            l "I had a feeling. We will try our best today."
+            l "The court here is very strict, and you are on track to be executed."
+            l "Just don't make them too angry, and maybe they will go easy on you, go it?"
             l "May God be with you."
         "I don't know what you're talking about":
             l "Great tactic. Do you also want to claim temporary insanity?"
+            y "I'm not insane, I just have no idea where I am!"
+            l "Perfect acting! You are a natural at this!"
     hide l
     show g at center with dissolve
-    g "Come on. Time has come to go to the courthouse."
+    g "Come on. It's time for your case."
     jump court
 
 label crimeSceneIntro:
@@ -65,7 +69,7 @@ label fingerprints:
 
 label bottles:
     # show y at center
-    y "Someone drank this pink liqueur down to the bottom. It must have been the bartender."
+    y "Someone drank this pink liquor down to the bottom. It must have been the bartender."
     $ hasBeer = True
     hide y
     jump crimeScene

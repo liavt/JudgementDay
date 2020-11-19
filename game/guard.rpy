@@ -20,7 +20,7 @@ label guard:
             with dissolve
             show g at right
             with dissolve
-            g "Now, turn against the wall and put your hands on it. If you do anything suspicions, I won't hesitate to use my taser gun"
+            g "Now, turn against the wall and put your hands behind your back. If you do anything suspicious, I won't hesitate to use my taser gun!"
             jump court
         "I didn't do it!!! I'm not going anywhere":
             hide y
@@ -32,31 +32,34 @@ label guard:
             with dissolve
             show y at left
             with dissolve
-            y "OK, fine..........."
+            y "OK, fine..."
             hide y
             with dissolve
             show g at right
             with dissolve
-            g "Now, turn against the wall and put your hands on it. If you do anything suspicions, I won't hesitate to use my taser gun"
+            g "Now, turn against the wall and put your hands behind your back. If you do anything suspicious, I won't hesitate to use my taser gun!"
             jump court
         "Where am I? What trial?":
             hide y
             with dissolve
             show g at right
             with dissolve
+            g "Don't play dumb. You know why you are here."
             g "If won't come with me with me in the next 5 seconds, I'll have to use my taser gun on you, and trust me, you really don't want this..."
+            y "Fine..."
             jump court
-        "Take me to the security room":
+        "Take me to the security room.":
             hide y
             with dissolve
             show g at right
             with dissolve
-            g "Haha, and why would I do such a thing???"
+            g "Haha, and why would I do such a thing?"
+            g "Inmates aren't allowed anywhere near that place."
             hide g
             with dissolve
             show y at left
             with dissolve
-            y "Because I know about what you did"
+            y "Because I know about what you did."
             hide y
             with dissolve
             show g at right
@@ -87,11 +90,19 @@ label guard:
                 show g at right
                 with dissolve
                 if guardAccusation == "I know you have an affair with __________" and "rachel" in hasRachel.lower():
-                    g "Oh man, who told you about her, I'm going to make him miserable!!! \nAnyway, I'll take you there"
+                    g "Oh man, who told you about her?"
+                    g "You better shut up about her! I could lose my job!"
+                    hide g with dissolve
+                    show y at left with dissolve
+                    y "I'll shut up if you take me to the security room."
+                    hide y with dissolve
+                    show g at right with dissolve
+                    g "...Fine. Only for a little bit though, don't want to get caught."
+                    g "Don't make this more difficult than it needs to be."
                     jump securityRoom
                 elif guardAccusation == "I know you have an affair with __________" and i == 2:
-                    g "Haha, you've got nothing on me, you're going to your execution as planned"
-                    g "Now, turn against the wall and put your hands on it. If you do anything suspicions, I won't hesitate to use my taser gun"
+                    g "Haha, you've got nothing on me, you're going to your execution as planned."
+                    g "Now, turn against the wall and put your hands behind your back. If you do anything suspicious, I won't hesitate to use my taser gun!"
                     jump court
                 g "I don't know any [hasRachel]"
                 $ i += 1
@@ -99,20 +110,22 @@ label guard:
             with dissolve
             show g at right
             with dissolve
-            g "Haha, you've got nothing on me, you can say whatever you want, it's not true, you're going to your execution as planned"
-            g "Now, turn against the wall and put your hands on it. If you do anything suspicions, I won't hesitate to use my taser gun"
+            g "Haha, you've got nothing on me, you can say whatever you want."
+            g "Nothing you say will be true, and you're going to your execution as planned"
+            g "Now, turn against the wall and put your hands behind your back. If you do anything suspicious, I won't hesitate to use my taser gun!"
         "I want to see my lawyer":
             menu:
-                g "Haha, You do not deserve a lawyer, now come with me"
+                g "Haha, you do not deserve a lawyer you filthy inmate, now come with me"
 
-                "OK, fine......":
+                "OK, fine...":
                     hide y
                     show g at right
-                    g "Now, turn against the wall and put your hands on it. If you do anything suspicions, I won't hesitate to use my taser gun"
+                    g "Now, turn against the wall and put your hands behind your back. If you do anything suspicious, I won't hesitate to use my taser gun!"
                     jump court
-                "Yes I do, according to the law, I deserve to see him":
+                "Yes I do, according to the law, I deserve to see my lawyer":
                     hide y
                     show g at right
-                    g "Oh, you're familiar with the law, I didn't know about that, I'll take you to your lawyer"
+                    g "Oh, you're familiar with the law suddenly?"
+                    g "Well, I guess I'll take you to your lawyer."
                     $ talkedToLawyer = True
                     jump lawyer

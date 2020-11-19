@@ -37,11 +37,14 @@ label cell:
     else:
         y "Where am I??"
     hide y
+    with dissolve
     show c at right
     with dissolve
     c "Hey man, what's your name?"
     hide c
+    with dissolve
     show y at left
+    with dissolve
     if repeats == 1:
         y "Wait, don't you remember what happened?"
         y "I'm supposed to be dead!"
@@ -59,10 +62,10 @@ label cell:
     menu:
         c "What is your name?"
 
-        "I don't know my name, I don't know anything":
+        "I don't know my name, I don't really remember anything..":
             hide y
             show c at right
-            c "You're crazy, at least you know why you're here?"
+            c "You're crazy, do you at least you know why you're here?"
         "Enter your name":
             python:
                 playersName = renpy.input("What is your name?")
@@ -144,7 +147,7 @@ label cell:
                                 hide c
                                 show y at left
                                 python:
-                                    moneyString = renpy.input("How much do you want to tell him?\n(between 0 to 10000)", allow="0123456789")
+                                    moneyString = renpy.input("How much money do you want to tell him?\n(between 0 to 10000)", allow="0123456789")
                                     moneyString = moneyString.strip()
                                     try:
                                         moneyInt = int(moneyString)
@@ -153,7 +156,26 @@ label cell:
                                 if moneyInt >= 4500 and moneyInt <= 5500:
                                     hide y
                                     show c at right
-                                    c "Yeah that will do it, I heard the guard has a mistress inside prison, her name is Rachel"
+                                    c "Yeah that will do it."
+                                    menu:
+                                        c "As long as you promise to give me the money afterwards, I can help you."
+                                        "Sure":
+                                            c "I heard the guard for your cell has a mistress inside prison, her name is {color=#34bdeb}Rachel{/color}."
+                                            c "Rachel is the warden's fiancé."
+                                            c "If he finds out, the guard is surely done for."
+                                            c "I'm sure you can threaten him with this info to get some access to places you normally... shouldn't."
+                                            c "Hack into the system or something, could help you in you case."
+                                            show y at left
+                                            y "Isn't that illegal? I'm already in prison."
+                                            c "I mean, what do you have to lose? Either you hack into the system and cheat yourself to an innocent sentence..."
+                                            c "...or you get executed."
+                                            c "Look, the choice is yours. If you make it out alive though, you owe me that money."
+                                            c "Good luck man."
+                                            hide y
+                                            with dissolve
+                                        "No way, the money's mine!":
+                                            c "Your loss."
+                                            c "Good luck, hopefully you wont get executed so you can use the money."
                                     jump guard
                                 elif moneyInt > 5500:
                                     hide c

@@ -12,26 +12,28 @@ label execution:
     show l at right
     with dissolve
     l "Hey man, I'm sorry for what happened."
+    l "I'm sure you tried your best."
+    l "Sigh... Life is so cruel. You can't always get second chances in stuff like this."
     if not talkedToLawyer:
+        l "But..."
         l "You know, had you have come to me and have been more prepared, this could have gone better."
         l "I know it's too late... But it's the least I could tell you."
-        l "After all, it's your right to see your lawyer before a trial. The guards can't stop you."
+        l "After all, it's your right to see your lawyer before a trial. The guards can't stop you if you insist enough."
     l "Just... have a good life up there, okay?"
     hide l with dissolve
     "Your lawyer leaves."
     show g at right
     with dissolve
     g "Your execution is in 10 minutes. Don't keep me waiting, I have some important... business.... to attend to."
-    g "Before we get to your execuition, as traditionaly happens, do you have any last words?"
     menu:
-        "Any last words?"
+        g "Before we get to your execution, as is tradition, do you have any last words?"
 
         "YES":
             $ lastWords = ""
             $ lastWords = renpy.input("Enter your last words:")
             $ lastWords = lastWords.strip()
             y "[lastWords]"
-            g "Oh, I'm so touched by your words, maybe I won't excute you today."
+            g "Oh, I'm so touched by your words, maybe I won't execute you today."
             $ renpy.pause(1.5)
             g "...haha, just kidding, this is my favorite part of the day."
             g "Come on now, empty your pockets."

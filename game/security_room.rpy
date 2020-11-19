@@ -8,8 +8,9 @@ label securityRoom:
     show y at left with dissolve
     show g at right with dissolve
     g "Here you go, you have 5 minutes, not a second more!"
+    g "Don't do anything that will get you or me in more trouble then we already are!"
     hide g with dissolve
-    y "Let's check this"
+    y "Let's check this out..."
     hide y
     jump securityRoomExplore
 
@@ -32,7 +33,7 @@ label pc:
 
 label search:
     python:
-        accepted_strings = ["smith", "adam", yourName, twinsName, yourID, twinsID]
+        accepted_strings = ["smith", "adam", yourName, twinsName, yourID, teinsID]
         searchInput = renpy.input("What is your input?")
         searchInputLower = searchInput.strip().lower()
         is_search_accepted = False
@@ -47,7 +48,7 @@ label search:
         hide screen pcHome
         "Prisoner '[searchInput]' was not found on the system..."
         menu:
-            "What do you want to do next?"
+            y "What do I want to do next?"
 
             "Try another input":
                 show screen pcHome
@@ -84,6 +85,7 @@ label leave:
     show g at right with dissolve
     g "It's time for your trial."
     g "No need to remind you not to say a single word about.. you know ..."
+    y "My lips are sealed."
     stop music fadeout 1.0
     jump court
 
