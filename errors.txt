@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/screens.rpy", line 266: u'while' is not a keyword argument or valid child for the vbox statement.
-    while i < len(notebookText):
-         ^
+The label start is defined twice, at
+  File "game/globals.rpyc", line 45 and
+  File "game/script.rpy", line 46.
 
 Ren'Py Version: Ren'Py 7.3.5.606
-Wed Nov 18 13:18:28 2020
+Wed Nov 18 19:24:02 2020
