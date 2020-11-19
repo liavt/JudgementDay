@@ -4,7 +4,6 @@
 
 init offset = -1
 
-
 ################################################################################
 ## Styles
 ################################################################################
@@ -241,18 +240,21 @@ screen notebook():
     tag notebook
     modal True
     frame:
-        xysize (500, 500)
-        xalign 0.5
-        yalign 0.5
-        background Solid("#ddd")
+        xysize (370, 500)
+        # xalign 0.5
+        # yalign 0.5
+        background "notebook.png"
 
-        textbutton "X" text_size 20 action Hide("notebook") xalign 1.0 yalign 0 xoffset 3 yoffset 3
-
+        textbutton "X" text_size 40 action Hide("notebook") xalign 1.0 yalign 0 xoffset 3 yoffset 3
         vbox:
-            text "Notebook" size 48
+            xpos 450
+            ypos 100
+            text "Notebook" size 48 color("#000")
             null height 20
             viewport:
+                draggable True
                 mousewheel True
+                key 'K_RETURN' action SetVariable("notebookText", notebookText + "\n"), Hide("notebook"), Show("notebook")
                 # Renpy has no multiline input, so this is dumb but it works
                 input value VariableInputValue("notebookText") copypaste True xmaximum 10000000
 
@@ -277,7 +279,7 @@ screen quick_menu():
 
             # Disabled this since it ruins time loop
             # textbutton _("Back") action Rollback()
-            textbutton _("Notebook") action Show('notebook')
+            textbutton _("Notebook") action Show('notebook'), Play("sound", "notebook_open.wav")
             textbutton _("History") action ShowMenu('history')
             textbutton _("Skip") action Skip() alternate Skip(fast=True, confirm=True)
             #textbutton _("Auto") action Preference("auto-forward", "toggle")

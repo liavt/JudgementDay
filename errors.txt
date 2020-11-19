@@ -2,13 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/cell.rpy", line 157: menu statement expects a non-empty block.
-    menu:
+File "game/screens.rpy", line 239: u'play' is not a keyword argument or valid child for the screen statement.
+    play sound "cookie_open.wav"
         ^
 
-File "game/cell.rpy", line 159: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation.
-    "Sure":
-    ^
-
 Ren'Py Version: Ren'Py 7.3.5.606
-Thu Nov 19 13:48:08 2020
+Thu Nov 19 21:27:51 2020
