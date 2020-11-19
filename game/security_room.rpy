@@ -32,7 +32,7 @@ label pc:
 
 label search:
     python:
-        accepted_strings = ["smith", "adam", "joshua", "106398772", "106398773"]
+        accepted_strings = ["smith", "adam", yourName, twinsName, yourID, twinsID]
         searchInput = renpy.input("What is your input?")
         searchInputLower = searchInput.strip().lower()
         is_search_accepted = False
@@ -79,7 +79,7 @@ label joshuaResult:
 label leave:
     hide screen roomSensors
     show y at left with dissolve
-    y "Guard Mike!"
+    y "Guard [guardsName]!"
     y "I'm done."
     show g at right with dissolve
     g "It's time for your trial."

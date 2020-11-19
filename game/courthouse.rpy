@@ -16,19 +16,20 @@ label court:
     $ convincedAboutBrother = False
     j "Order, order!"
     j "We will now begin case #2158673"
-    j "Our defendant: Adam Smith"
-    if playersName.lower() != "adam smith":
+    j "Our defendant: [yourName]"
+    j "ID number: #[yourID]"
+    if playersName.lower() != yourName.lower():
         y "That's not my name!"
         "The judge looks confused"
         if playersName == "":
             y "Actually, I don't even remember what my name is..."
         else:
             y "My name is actually [playersName]."
-        j "No, you must be mistaken. The docket says Adam Smith."
+        j "No, you must be mistaken. The docket says [yourName]."
         j "If you have no more interruptions, let us continue with the trial."
     else:
         y "That's me alright."
-    j "Representing the Restaurant Go Go Dim Sum, we have Prosecutor Mark. You may now begin your interrogation of the defendant."
+    j "Representing the Restaurant [restaurntName], we have Prosecutor [prosecutorsName]. You may now begin your interrogation of the defendant."
     jump courtwhy
 
 label courtwhy:

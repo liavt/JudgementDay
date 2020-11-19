@@ -7,7 +7,7 @@ label guard:
     hide c
     hide y
     show g at right
-    g "Come with me inmate #67584, it's time for your trial!"
+    g "Come with me inmate #[yourID], it's time for your trial!"
     hide g
     show y at left
     menu:

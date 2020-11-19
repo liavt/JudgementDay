@@ -11,8 +11,8 @@ label execution:
     show y at left
     show l at right
     with dissolve
+    l "Hey man, I'm sorry for what happened."
     if not talkedToLawyer:
-        l "Hey man, I'm sorry for what happened."
         l "You know, had you have come to me and have been more prepared, this could have gone better."
         l "I know it's too late... But it's the least I could tell you."
         l "After all, it's your right to see your lawyer before a trial. The guards can't stop you."

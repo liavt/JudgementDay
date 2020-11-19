@@ -54,7 +54,7 @@ label start:
     default yourName = "Adam Smith"
     default yourID = "106398772"
     default twinsName = "Joshua"
-    default teinsID = "106398773"
+    default twinsID = "106398773"
     default restaurntName = "Go GO Dim Sum"
     default guardsName = "Mike"
     default prosecutorsName = "Mark"
