@@ -11,6 +11,7 @@ default talkedToLawyer = False
 default repeats = 0
 
 # Background images
+image prisonZoomOut = "bg prison zoom out.jpg"
 image cell = "bg prison cell"
 image courthouse = "bg court house.jpg"
 image securityRoom = "bg security room.jpg"
@@ -22,6 +23,7 @@ image china = "bg china.jpg"
 
 # character sprites
 image y = "sprite player.png"
+image y2 = "sprite future you.png"
 image c = "sprite cellmate.png"
 image g = "sprite guard.png"
 image l = "sprite lawyer.png"
@@ -29,6 +31,7 @@ image p = "sprite prosecutor.png"
 image j = "sprite judge.png"
 image b = "sprite bartender.png"
 image t = "sprite evil.png"
+image t2 = "sprite evil jail.png"
 
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
@@ -48,7 +51,7 @@ label start:
     $ hasBeer = False
     $ hasFingerprints = False
     $ talkedToLawyer = False
-    jump cell
+    jump intro
     return
 
 default yourName = "Adam Smith"

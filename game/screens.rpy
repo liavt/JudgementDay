@@ -244,11 +244,10 @@ screen notebook():
         # xalign 0.5
         # yalign 0.5
         background "notebook.png"
-
-        textbutton "X" text_size 40 action Hide("notebook") xalign 1.0 yalign 0 xoffset 3 yoffset 3
         vbox:
             xpos 450
             ypos 100
+            textbutton "X" text_size 40 action Play("sound", "notebook_open.wav"), Hide("notebook") xalign 1.0 yalign 0 xoffset 3 yoffset 3
             text "Notebook" size 48 color("#000")
             null height 20
             viewport:

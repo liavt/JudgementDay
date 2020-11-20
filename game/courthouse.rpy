@@ -141,12 +141,14 @@ label courtwhynoanswer:
     show l at right
     with dissolve
     l "Your honor, my defendant does not have to answer a question if they don't want to."
+    hide b
+    with dissolve
     show j at left
     with dissolve
     j "Correct. Prosecutor, continue to your next question."
-    hide l
-    with dissolve
     hide j
+    with dissolve
+    hide l
     with dissolve
     $ guilty = True
     jump courtwhere

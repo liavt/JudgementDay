@@ -6,8 +6,8 @@ define timeLoopEffect = MultipleTransition([
 ])
 
 label execution:
-    scene execution with fade
     play music "execution.mp3" fadein 2.0
+    scene execution with fade
     show y at left
     show l at right
     with dissolve

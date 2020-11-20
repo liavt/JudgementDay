@@ -4,10 +4,17 @@ default whyHere = 0
 default moneyString = ""
 default moneyInt = 0
 
+label intro:
+    play music "cell.mp3" fadein 1.0
+    scene prisonZoomOut with dissolve:
+        ease 7 zoom 1.4
+    pause (5)
+    scene cell with dissolve
+
 label cell:
     scene cell
+    pause(1)
     $ renpy.block_rollback()
-    play music "cell.mp3" fadein 1.0
     show y at left
     with dissolve
 
