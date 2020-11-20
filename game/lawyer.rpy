@@ -13,6 +13,13 @@ label lawyer:
             l "I had a feeling. I don't offer it usually, but I offer you to visit the crime scene for one last time."
             l "Maybe you'll figure something out."
             y "Thank you sir, it means a lot to me."
+            if not hasNotebook:
+                l "Before we go, take this notebook."
+                l "If you find or hear any information that could help you in your case, make sure to write it down."
+                hide screen quick_menu
+                $ hasNotebook = True
+                show screen quick_menu
+                "Tip: you can open your notebook by pressing the {color=#34bdeb}Notebook{/color} bottom under the dialogue box."
             jump crimeSceneIntro
         "YES":
             l "I had a feeling. We will try our best today."
