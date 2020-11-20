@@ -9,12 +9,32 @@ default convincedAboutBrother = False
 label court:
     scene courthouse with fade
     play music "courthouse.mp3" fadein 1.0
-    show j at right
-    with dissolve
     $ guilty = False
     $ mentionedBrother = False
     $ convincedAboutBrother = False
+
+    show l
+    with dissolve
+    l "Hey, the case is starting."
+    if not talkedToLawyer:
+        l "I'm your lawyer for the case."
+        l "I wish we had time earlier to talk but I guess this'll have to do."
+    l "They are going to have you answer some questions."
+    l "Just answer as truthfully as possible, I'll try to back you up when I can"
+    if not hasNotebook:
+        l "Before we go, take this notebook."
+        l "If you find or hear any information that could help you in your case, make sure to write it down."
+        hide screen quick_menu
+        $ hasNotebook = True
+        show screen quick_menu
+        "Tip: you can open your notebook by pressing the {color=#34bdeb}Notebook{/color} bottom under the dialogue box."
+    show j at right
+    with dissolve
     j "Order, order!"
+    l "Ah, the case is starting!"
+    l "Just act natural, you'll be fine."
+    hide l
+    with dissolve
     j "We will now begin case #2158673"
     j "Our defendant: [yourName]"
     j "ID number: #[yourID]"

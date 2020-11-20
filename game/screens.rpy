@@ -305,7 +305,8 @@ screen quick_menu():
 
             # Disabled this since it ruins time loop
             # textbutton _("Back") action Rollback()
-            textbutton _("Notebook") action Show('notebook', animate=True), Play("sound", "notebook_open.wav")
+            if hasNotebook:
+                textbutton _("Notebook") action Show('notebook', animate=True), Play("sound", "notebook_open.wav")
             textbutton _("History") action ShowMenu('history')
             textbutton _("Skip") action Skip() alternate Skip(fast=True, confirm=True)
             #textbutton _("Auto") action Preference("auto-forward", "toggle")
@@ -1483,7 +1484,8 @@ screen quick_menu():
             xalign 0.5
             yalign 1.0
 
-            textbutton _("Back") action Rollback()
+            if hasNotebook:
+                textbutton _("Notebook") action Show('notebook', animate=True), Play("sound", "notebook_open.wav")
             textbutton _("Skip") action Skip() alternate Skip(fast=True, confirm=True)
             textbutton _("Auto") action Preference("auto-forward", "toggle")
             textbutton _("Menu") action ShowMenu()

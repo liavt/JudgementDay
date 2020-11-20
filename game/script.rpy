@@ -6,6 +6,7 @@ default hasBeer = False
 default hasFingerprints = False
 default playersName = ""
 default talkedToLawyer = False
+default hasNotebook = False
 
 # How many times time has looped
 default repeats = 0
