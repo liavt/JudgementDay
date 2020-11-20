@@ -269,7 +269,7 @@ screen notebook(animate):
                 on hide:
                     align (0.45, 0.0)
                     easein 0.2 align(1.0, 0.0)
-        xysize (370, 500)
+        xysize (370, 550)
         background "notebook.png"
         vbox:
             xpos 450
