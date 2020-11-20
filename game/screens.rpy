@@ -235,14 +235,41 @@ style choice_button_text is default:
 
 default notebookText = "Write text here"
 
-screen notebook():
+screen notebook(animate):
     zorder 1000
     tag notebook
     modal True
     frame:
+        background "#000000"
+        if animate:
+            at transform:
+                alpha 0.0
+                easein 0.3 alpha 0.6
+                on hide:
+                    alpha 0.6
+                    easein 0.2 alpha 0.0
+        else:
+            at transform:
+                alpha 0.6
+                on hide:
+                    alpha 0.6
+                    easein 0.2 alpha 0.0
+
+    frame:
+        if animate:
+            at transform:
+                align (1.0, 0.0)
+                easein 0.3 align(0.45, 0.0)
+                on hide:
+                    align (0.45, 0.0)
+                    easein 0.2 align(1.0, 0.0)
+        else:
+            at transform:
+                align(0.45, 0.0)
+                on hide:
+                    align (0.45, 0.0)
+                    easein 0.2 align(1.0, 0.0)
         xysize (370, 500)
-        # xalign 0.5
-        # yalign 0.5
         background "notebook.png"
         vbox:
             xpos 450
@@ -253,9 +280,9 @@ screen notebook():
             viewport:
                 draggable True
                 mousewheel True
-                key 'K_RETURN' action SetVariable("notebookText", notebookText + "\n"), Hide("notebook"), Show("notebook")
+                key 'K_RETURN' action SetVariable("notebookText", notebookText + "\n"), Hide("notebook"), Show("notebook", animate=False)
                 # Renpy has no multiline input, so this is dumb but it works
-                input value VariableInputValue("notebookText") copypaste True xmaximum 10000000
+                input value VariableInputValue("notebookText") copypaste True
 
 
 ## Quick Menu screen ###########################################################
@@ -278,7 +305,7 @@ screen quick_menu():
 
             # Disabled this since it ruins time loop
             # textbutton _("Back") action Rollback()
-            textbutton _("Notebook") action Show('notebook'), Play("sound", "notebook_open.wav")
+            textbutton _("Notebook") action Show('notebook', animate=True), Play("sound", "notebook_open.wav")
             textbutton _("History") action ShowMenu('history')
             textbutton _("Skip") action Skip() alternate Skip(fast=True, confirm=True)
             #textbutton _("Auto") action Preference("auto-forward", "toggle")

@@ -62,7 +62,8 @@ label adamResult:
     hide screen pcResults
     show screen pcAdam
     pause(1)
-    y "I look like a shadow of myself... I got to get out of this prison."
+    y "I look like a shadow of myself..."
+    j "I got to get out of this prison."
     hide screen pcAdam
     show screen pcResults
     call screen empty
@@ -72,6 +73,8 @@ label joshuaResult:
     show screen pcJoshua
     pause(1)
     y "This guy looks just like me! All these years I was sure I was an orphan."
+    y "His ID number is even one lower than mine!"
+    y "Maybe they confused me for him..."
     y "Who are you, JOSHUA SMITH?"
     hide screen pcJoshua
     show screen pcResults

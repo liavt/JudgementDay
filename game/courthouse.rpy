@@ -135,9 +135,9 @@ label courtalibifail:
     jump courtwhere
 
 label courtwhynoanswer:
-    p "Don't play dumb, we have a witness testifying they saw you."
     show b at left
     with dissolve
+    p "Don't play dumb, we have a witness testifying they saw you."
     show l at right
     with dissolve
     l "Your honor, my defendant does not have to answer a question if they don't want to."

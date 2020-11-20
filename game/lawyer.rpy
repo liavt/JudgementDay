@@ -55,21 +55,25 @@ label crimeScene:
 
 label money:
     show y at center
-    y "My wallet is clearly empty.. I should keep it"
+    y "Ah! My wallet!"
+    y "It must have fallen out of my pocket when I was arrestd."
+    y "It's clearly empty... I should keep it to show that I didn't steal the moeny."
     $ hasWallet = True
     hide y
     jump crimeScene
 
 label fingerprints:
     show y at center
-    y "Look at those strange fingerprints. I'll keep them in mind."
+    y "Look at those strange fingerprints near the register... They don't look like mine."
+    y "I'll keep them in mind."
     $ hasFingerprints = True
     hide y
     jump crimeScene
 
 label bottles:
     # show y at center
-    y "Someone drank this pink liquor down to the bottom. It must have been the bartender."
+    y "Someone drank this pink liquor down to the bottom."
+    y "It's behind the counter, so it must have been that bartender who testified they saw me."
     $ hasBeer = True
     hide y
     jump crimeScene

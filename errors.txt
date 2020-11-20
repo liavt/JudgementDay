@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/screens.rpy", line 239: u'play' is not a keyword argument or valid child for the screen statement.
-    play sound "cookie_open.wav"
-        ^
+File "game/screens.rpy", line 244: u'with' is not a keyword argument or valid child for the add statement.
+    add halfblack with dissolve
+                      ^
 
 Ren'Py Version: Ren'Py 7.3.5.606
-Thu Nov 19 21:27:51 2020
+Fri Nov 20 13:39:28 2020
