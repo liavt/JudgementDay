@@ -71,9 +71,11 @@ label execution:
     "{color=#f00}{b}{i}'Failure is the chance to do better next time.'{/i}{/b}{/color}"
     $ repeats = repeats + 1
     hide screen fortune with dissolve
+    stop music fadeout 1.0
+    play sound "time travel.flac"
     scene cell
     with timeLoopEffect
-    jump start
+    jump cell
 
 screen fortune:
     # modal True

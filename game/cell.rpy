@@ -4,14 +4,8 @@ default whyHere = 0
 default moneyString = ""
 default moneyInt = 0
 
-label intro:
-    play music "cell.mp3" fadein 1.0
-    scene prisonZoomOut with dissolve:
-        ease 7 zoom 1.4
-    pause (5)
-    scene cell with dissolve
-
 label cell:
+    play music "cell.mp3" fadein 1.0
     scene cell
     pause(1)
     $ renpy.block_rollback()
@@ -203,3 +197,10 @@ label cell:
                     show c at right
                     c "You did do the crime, but you won't tell me what it is? Harsh."
                 jump guard
+
+label intro:
+    scene prisonZoomOut with dissolve:
+        ease 7 zoom 1.4
+    pause (5)
+    scene cell with dissolve
+    jump cell

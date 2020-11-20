@@ -113,6 +113,7 @@ label guard:
             g "Haha, you've got nothing on me, you can say whatever you want."
             g "Nothing you say will be true, and you're going to your execution as planned"
             g "Now, turn against the wall and put your hands behind your back. If you do anything suspicious, I won't hesitate to use my taser gun!"
+            jump court
         "I want to see my lawyer":
             menu:
                 g "Haha, you do not deserve a lawyer you filthy inmate, now come with me"
