@@ -29,7 +29,6 @@ label execution:
         g "Before we get to your execution, as is tradition, do you have any last words?"
 
         "YES":
-            $ lastWords = ""
             $ lastWords = renpy.input("Enter your last words:")
             $ lastWords = lastWords.strip()
             y "[lastWords]"
@@ -39,6 +38,9 @@ label execution:
             g "Come on now, empty your pockets."
         "NO":
             g "Your loss, maybe it would have change my mind ablut your execution. Oh well, Come on now, empty your pockets."
+        "[lastWords]" if lastWords is not "":
+            g "Strange, I feel like I've heard it before, like a Déjà-vu."
+            g "Come on now, empty your pockets."
     if repeats == 0:
         "You rummage around in your right pocket, until you feel a small object presiding there."
         "You take out the object, which is revealed to be a fortune cookie."

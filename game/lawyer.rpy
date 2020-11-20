@@ -98,6 +98,10 @@ label fortune:
         list_of_fortunes.append("Truth is an unpopular subject. Because it is unquestionably correct.")
         list_of_fortunes.append("All the world may not love a lover but they will be watching him.")
         list_of_fortunes.append("The human spirit is stronger than anything that can happen to it.")
+        for i in range (2):
+            list_of_fortunes.append("Mike <3 Rachel")
+        if lastWords not in list_of_fortunes:
+            list_of_fortunes.append(lastWords)
         fortune = renpy.random.choice(list_of_fortunes)
     "{color=#f00}{b}{i}\"[fortune]\"{/i}{/b}{/color}"
     jump crimeScene

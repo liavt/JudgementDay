@@ -7,6 +7,7 @@ default hasFingerprints = False
 default playersName = ""
 default talkedToLawyer = False
 default hasNotebook = False
+default lastWords = ""
 
 # How many times time has looped
 default repeats = 0
@@ -55,6 +56,7 @@ label start:
     jump intro
     return
 
+# Plot details
 default yourName = "Adam Smith"
 default yourID = "106398772"
 default twinsName = "Joshua"
