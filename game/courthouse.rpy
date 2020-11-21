@@ -50,7 +50,7 @@ label court:
         j "No, you must be mistaken. The docket says [yourName]."
         j "If you have no more interruptions, let us continue with the trial."
     else:
-        y "That's my name? I don't remember being called [yourName]..."
+        y "[yourName] is indeed my name..."
     hide y
     with dissolve
     show p

@@ -75,6 +75,9 @@ label cell:
             hide y
             show c at right
             c "So, [playersName], what do they think you did?"
+        "[playersName]" if playersName != "":
+            hide y
+            show c at right
     # Reason for prison
     hide c
     show y at left
@@ -173,7 +176,7 @@ label celloffermoney:
         hide c
         show y at left
         python:
-            moneyString = renpy.input("How much money do you want to tell him?\n(between 0 to 10000)", allow="0123456789")
+            moneyString = renpy.input("How much money do you want to offer him?\n(between 0 to 10000)", allow="0123456789")
             moneyString = moneyString.strip()
             try:
                 moneyInt = int(moneyString)
