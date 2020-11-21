@@ -366,11 +366,7 @@ screen navigation():
 
         textbutton _("Preferences") action ShowMenu("preferences")
 
-        if _in_replay:
-
-            textbutton _("End Replay") action EndReplay(confirm=True)
-
-        elif not main_menu:
+        if not main_menu:
 
             textbutton _("Main Menu") action MainMenu()
 
@@ -442,7 +438,7 @@ style main_menu_frame:
     xsize 280
     yfill True
 
-    background "gui/overlay/main_menu.png"
+    #background "gui/overlay/main_menu.png"
 
 style main_menu_vbox:
     xalign 1.0

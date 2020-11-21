@@ -13,7 +13,8 @@ label cell:
     with dissolve
 
     if repeats > 0:
-        $ renpy.save(renpy.newest_slot(), "Loop #[repeats]")
+        $ renpy.take_screenshot()
+        $ renpy.save("1-" + str(repeats), "Loop #" + str(repeats))
 
     if repeats == 1:
         y "Huh, I didn't die?"
