@@ -27,7 +27,7 @@ label court:
         hide screen quick_menu
         $ hasNotebook = True
         show screen quick_menu
-        "Tip: you can open your notebook by pressing the {color=#34bdeb}Notebook{/color} bottom under the dialogue box."
+        "Tip: you can open your notebook by pressing the {color=#34bdeb}Notebook{/color} button under the dialogue box."
     show j at right
     with dissolve
     j "Order, order!"
@@ -268,7 +268,7 @@ label courtdnabrother:
         "Just think about it, it explains everything!":
             p "Not really..."
             jump courtdnafail
-        "I have his ID number, you can check the database!":
+        "{color=#34bdeb}I have his ID number, you can check the database!{/color}":
             python:
                 brotherIDNumber = renpy.input("What is your brother's ID number?", allow="0123456789")
                 brotherIDNumber = brotherIDNumber.strip()

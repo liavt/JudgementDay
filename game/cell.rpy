@@ -211,6 +211,7 @@ label celloffermoney:
             show y at left
             c "Haha, try harder, I believe you can give me much more money. If you don't have more than a couple thousand, what's the point?"
         $ i += 1
+    jump guard
 
 label intro:
     scene prisonZoomOut with dissolve:

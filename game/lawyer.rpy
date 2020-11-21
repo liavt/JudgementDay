@@ -19,7 +19,7 @@ label lawyer:
                 hide screen quick_menu
                 $ hasNotebook = True
                 show screen quick_menu
-                "Tip: you can open your notebook by pressing the {color=#34bdeb}Notebook{/color} bottom under the dialogue box."
+                "Tip: you can open your notebook by pressing the {color=#34bdeb}Notebook{/color} button under the dialogue box."
             jump crimeSceneIntro
         "YES":
             l "I had a feeling. We will try our best today."
@@ -64,7 +64,7 @@ label money:
     show y at center
     y "Ah! My wallet!"
     y "It must have fallen out of my pocket when I was arrestd."
-    y "It's clearly empty... I should keep it to show that I didn't steal the moeny."
+    y "It's clearly empty... I should keep it to show that I didn't steal the money."
     $ hasWallet = True
     hide y
     jump crimeScene
@@ -78,7 +78,7 @@ label fingerprints:
     jump crimeScene
 
 label bottles:
-    # show y at center
+    show y at center
     y "Someone drank this pink liquor down to the bottom."
     y "It's behind the counter, so it must have been that bartender who testified they saw me."
     $ hasBeer = True
