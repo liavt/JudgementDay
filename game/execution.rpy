@@ -19,6 +19,25 @@ label execution:
         l "You know, had you have come to me and have been more prepared, this could have gone better."
         l "I know it's too late... But it's the least I could tell you."
         l "After all, it's your right to see your lawyer before a trial. The guards can't stop you if you insist enough."
+    else:
+        if hasFingerprints and hasBeer and hasWallet:
+            l "It's just a shame, we had such good evidence from the crime scene."
+            if mentionedBrother and not convincedAboutBrother:
+                l "I liked your narrative that it was your twin brother, our evidence definitely agreed with it."
+                l "But you just needed to nail the execution."
+                l "While you had evidence that you didn't do it, you didn't have any evidence that it was actually your twin brother."
+                l "I don't know how we could have gotten that information on our own though..."
+                l "Maybe you should have asked around before the case more."
+            else:
+                l "You just didn't have a good enough narrative about who could have done it instead of you."
+                l "You were able to prove that it wasn't you, you had no other... scapegoat... let's say to blame it on."
+                l "If you had a second chance then maybe you should have tried to find who actually did the crime, it would be much more convincing."
+            l "It was just not enough to convince them..."
+            l "Oh well, that's it. Too late now."
+        else:
+            l "I don't think we had enough evidence from the crime scene, to be honest."
+            l "If we had a second chance, I think we should have tried looking for more."
+            l "Just a shame that you don't get second chances at things like this..."
     l "Just... have a good life up there, okay?"
     hide l with dissolve
     "Your lawyer leaves."
