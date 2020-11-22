@@ -41,7 +41,7 @@ Game by:
 ## distribution. This must be ASCII-only, and must not contain spaces, colons,
 ## or semicolons.
 
-define build.name = "Judgement Day"
+define build.name = "JudgementDay"
 
 
 ## Sounds and music ############################################################
@@ -51,7 +51,7 @@ define build.name = "Judgement Day"
 
 define config.has_sound = True
 define config.has_music = True
-define config.has_voice = True
+define config.has_voice = False
 
 
 ## To allow the user to play a test sound on the sound or voice channel,
@@ -146,7 +146,7 @@ default preferences.afm_time = 15
 ## This generally should not be changed, and if it is, should always be a
 ## literal string, not an expression.
 
-define config.save_directory = "TextGame-1605184731"
+define config.save_directory = "JudgementDay-1605184731"
 
 
 ## Icon ########################################################################
