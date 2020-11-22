@@ -44,8 +44,9 @@ label execution:
     show g at right
     with dissolve
     g "Your execution is in 10 minutes. Don't keep me waiting, I have some important... business.... to attend to."
+    g "Before we get to your execution, there is an important tradition we need to follow:"
     menu:
-        g "Before we get to your execution, as is tradition, do you have any last words?"
+        g "Do you have any last words?"
 
         "YES":
             $ lastWords = renpy.input("Enter your last words:")

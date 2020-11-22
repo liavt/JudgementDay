@@ -81,6 +81,17 @@ label courtwhy:
             hide l
             with dissolve
             jump courtplea
+        "I have no idea why I'm here! I don't want to answer any questions, just get me out of here!":
+            show l at right
+            with dissolve
+            l "You really don't know any answer to your questions?"
+            "Your lawyer facepalms"
+            p "I guess I won't pester the defendant too much."
+            p "If he really doesn't know anything, I will forfeit my time. Clearly the evidence will speak for itself."
+            $ guilty = True
+            hide l
+            with dissolve
+            jump courtplea
     menu:
         p "First, why did you do it?"
 
