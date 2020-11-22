@@ -102,6 +102,9 @@ label fortune:
             list_of_fortunes.append("Mike <3 Rachel")
         if lastWords not in list_of_fortunes:
             list_of_fortunes.append(lastWords)
+            list_of_fortunes.append(lastWords)
+            list_of_fortunes.append(lastWords)
+
         fortune = renpy.random.choice(list_of_fortunes)
     "{color=#f00}{b}{i}\"[fortune]\"{/i}{/b}{/color}"
     jump crimeScene

@@ -404,6 +404,11 @@ label courtplea:
         j "Guilty, on a charge of robbery of a Chinese restuarant."
         j "Your sentence:"
         j "Execution."
+        if repeats == 1:
+            y "Not again!"
+            j "Huh, what does that mean?"
+            j "Have you done this before?"
+            j "Doesn't matter, you are dying anyways."
     else:
         j "Not guilty."
         j "You have shown sufficient evidence that it was indeed your twin brother who commited the crime."

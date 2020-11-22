@@ -75,7 +75,11 @@ label cell:
             hide y
             show c at right
             c "So, [playersName], what do they think you did?"
-        "[playersName]" if playersName != "":
+        "{color=#34bdeb}Adam Smith{/color}" if playersName.lower() == yourName.lower():
+            $ playersName = yourName
+            hide y
+            show c at right
+        "[playersName]" if playersName != "" and not (playersName.lower() == yourName):
             hide y
             show c at right
     # Reason for prison
@@ -193,7 +197,7 @@ label celloffermoney:
                     c "Rachel is the warden's fiancé."
                     c "If he finds out, the guard is surely done for."
                     c "I'm sure you can threaten him with this info to get some access to places you normally... shouldn't."
-                    c "Hack into the system or something, could help you in you case."
+                    c "Hack into the system or something, could help you in your case."
                     show y at left
                     y "Isn't that illegal? I'm already in prison."
                     c "I mean, what do you have to lose? Either you hack into the system and cheat yourself to an innocent sentence..."

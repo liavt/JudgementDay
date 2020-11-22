@@ -73,7 +73,7 @@ label joshuaResult:
     show screen pcJoshua
     pause(1)
     y "This guy looks just like me! All these years I was sure I was an orphan."
-    y "His ID number is even one lower than mine!"
+    y "His ID number is even one higher than mine!"
     y "Maybe they confused me for him..."
     y "Who are you, JOSHUA SMITH?"
     hide screen pcJoshua
